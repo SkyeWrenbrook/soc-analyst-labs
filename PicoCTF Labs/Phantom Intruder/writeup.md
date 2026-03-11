@@ -40,13 +40,15 @@ Extracted and reassembled the Base64 fragments in sequence.
 
 Then I decoded them in CyberChef using **From Base64**.
 
-> <img width="962" height="1047" alt="convertbase64" src="https://github.com/user-attachments/assets/bb4bad02-f5e3-430b-b135-fda9710e3d04" />
+
 
 ---
 
 ## Recovered Flag
 
-<img width="962" height="1047" alt="Screenshot_2026-02-22_00-00-10 (2)" src="https://github.com/user-attachments/assets/24bf2ee4-a235-4934-bd09-7ccd54757abf" />
+<img width="711" height="826" alt="challenge-flag-recovered png" src="https://github.com/user-attachments/assets/a2a5b171-2acf-4860-903d-b02c202ef503" />
+
+<img width="962" height="929" alt="cyberchef-base64-decode-flag png" src="https://github.com/user-attachments/assets/6174edb5-f387-4631-af43-41bb96f6b01a" />
 
 
 ---
