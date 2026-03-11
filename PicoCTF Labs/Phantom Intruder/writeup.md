@@ -30,7 +30,7 @@ Also saved handshake filter tcp.flags.syn == 1 || tcp.flags.ack == 1 for later r
 ### 3. Inspect Payloads
 Located Base64-like strings across multiple packets using Wireshark's search. Verified their order and continuity.
 
-> <img width="1269" height="1045" alt="payload" src="https://github.com/user-attachments/assets/4a91557a-a198-4c11-bbb1-18d4ffdfb74a" />
+> <img width="800" height="800" alt="payload" src="https://github.com/user-attachments/assets/4a91557a-a198-4c11-bbb1-18d4ffdfb74a" />
 
 ### 4. Decode
 Extracted and reassembled the Base64 fragments in sequence.
