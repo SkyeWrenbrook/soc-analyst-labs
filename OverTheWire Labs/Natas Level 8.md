@@ -14,9 +14,9 @@ reverse the string using strrev(),
 
 and decode the final string using base64_decode() in the Linux command line
 
-'''bash
+```bash
 echo "3d3d516343746d4d6d6c315669563362" | xxd -r -p | rev | base64 -d
-'''
+```
 
 the result: oubWYf2kBq
 
