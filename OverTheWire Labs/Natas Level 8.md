@@ -4,7 +4,7 @@
 
 Right click "view source code"
 
-<img width="800" height="800" alt="02 natas8-source-code-analysis" src="https://github.com/user-attachments/assets/92ef48b2-421b-499a-aec4-4911a1d1d530" />
+<img width="1000" height="1000" alt="02 natas8-source-code-analysis" src="https://github.com/user-attachments/assets/92ef48b2-421b-499a-aec4-4911a1d1d530" />
 
 Decode the hexadecimal string "3d3d516343746d4d6d6c315669563362" using the details in the function encodeSecret($secret)
 
