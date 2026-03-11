@@ -1,4 +1,4 @@
-# picoCTF — Ph4nt0m-1ntrud3r Write-Up
+# PicoCTF — Ph4nt0m-1ntrud3r Write-Up
 
 ## Overview
 A network traffic capture (PCAP) was provided. The goal was to analyze it in Wireshark, find encoded data in the packet payloads, and recover the flag.
