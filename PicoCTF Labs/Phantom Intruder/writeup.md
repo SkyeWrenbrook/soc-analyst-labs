@@ -25,6 +25,7 @@ Used display filters to surface packets with Base64 payloads. Since Base64 strin
 frame contains "=="
 ```
 Also saved handshake filter tcp.flags.syn == 1 || tcp.flags.ack == 1 for later reference as handshake-related packets
+> <img width="700" height="700" alt="payloadview" src="https://github.com/user-attachments/assets/9d417ae6-bef7-4df6-a09e-1a9fd062240b" />
 
 > <img width="700" height="700" ![Filtered traffic showing Base64 indicators](https://github.com/user-attachments/assets/9d417ae6-bef7-4df6-a09e-1a9fd062240b)
 
