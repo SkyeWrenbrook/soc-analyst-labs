@@ -35,7 +35,7 @@ Located Base64-like strings across multiple packets using Wireshark's search. Ve
 ### 4. Decode
 Extracted and reassembled the Base64 fragments in sequence.
 
-<img width="650" height="516" alt="final" src="https://github.com/user-attachments/assets/36fd9e2d-67e8-41bc-80d4-d99849f4344b" />
+<img width="800" height="800" alt="final" src="https://github.com/user-attachments/assets/36fd9e2d-67e8-41bc-80d4-d99849f4344b" />
 
 Then I decoded them in CyberChef using **From Base64**.
 
@@ -45,9 +45,9 @@ Then I decoded them in CyberChef using **From Base64**.
 
 ## Recovered Flag
 
-<img width="711" height="826" alt="challenge-flag-recovered png" src="https://github.com/user-attachments/assets/a2a5b171-2acf-4860-903d-b02c202ef503" />
+<img width="800" height="800" alt="challenge-flag-recovered png" src="https://github.com/user-attachments/assets/a2a5b171-2acf-4860-903d-b02c202ef503" />
 
-<img width="962" height="929" alt="cyberchef-base64-decode-flag png" src="https://github.com/user-attachments/assets/6174edb5-f387-4631-af43-41bb96f6b01a" />
+<img width="800" height="800" alt="cyberchef-base64-decode-flag png" src="https://github.com/user-attachments/assets/6174edb5-f387-4631-af43-41bb96f6b01a" />
 
 
 ---
