@@ -15,7 +15,7 @@ A network traffic capture (PCAP) was provided. The goal was to analyze it in Wir
 ### 1. Load & Review
 Opened the PCAP in Wireshark and reviewed overall traffic flow and protocol distribution.
 
-> <img width="1269" height="1045" alt="payloadview" src="https://github.com/user-attachments/assets/8df27e14-d967-4da7-a574-3a5b4a3198cb" />
+> <img width="700" height="700" alt="payloadview" src="https://github.com/user-attachments/assets/8df27e14-d967-4da7-a574-3a5b4a3198cb" />
 
 
 ### 2. Filter for Encoded Data
