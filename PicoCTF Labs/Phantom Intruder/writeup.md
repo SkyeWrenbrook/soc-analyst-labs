@@ -39,7 +39,7 @@ Extracted and reassembled the Base64 fragments in sequence.
 
 Then I decoded them in CyberChef using **From Base64**.
 
-
+<img width="800" height="800" alt="cyberchef-base64-decode-flag png" src="https://github.com/user-attachments/assets/6174edb5-f387-4631-af43-41bb96f6b01a" />
 
 ---
 
@@ -47,7 +47,6 @@ Then I decoded them in CyberChef using **From Base64**.
 
 <img width="800" height="800" alt="challenge-flag-recovered png" src="https://github.com/user-attachments/assets/a2a5b171-2acf-4860-903d-b02c202ef503" />
 
-<img width="800" height="800" alt="cyberchef-base64-decode-flag png" src="https://github.com/user-attachments/assets/6174edb5-f387-4631-af43-41bb96f6b01a" />
 
 
 ---
