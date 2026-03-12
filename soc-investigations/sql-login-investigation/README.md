@@ -5,13 +5,14 @@ Identify suspicious login activity by filtering authentication logs using SQL qu
 As part of a cybersecurity investigation, a potential security incident was identified that took place outside of normal business hours. To determine the scope of the incident, SQL queries were used to analyze login activity stored in the log_in_attempts table.
 The goal was to isolate all failed login attempts occurring after 18:00, using SQL filter conditions to narrow the results. The login_time column was used to filter by time, and the success column — where a value of 0 (or FALSE) indicates a failed attempt — was used to exclude successful logins.
 
+The resulting query and a detailed explanation of its logic were documented in the "Retrieve After Hours Failed Login Attempts" section of this document, along with screenshots of the query executed in the lab environment.
+
 ## Tools Used
 - MariaDB
 - SQL filtering
 - Log analysis
 - Query filtering (AND, OR, NOT, LIKE)
-  
-The resulting query and a detailed explanation of its logic were documented in the "Retrieve After Hours Failed Login Attempts" section of this document, along with screenshots of the query executed in the lab environment.
+
 # Retrieve after hours failed login attempts
 <img width="889" height="489" alt="Screenshot 2026-02-27 210206" src="https://github.com/user-attachments/assets/c155aae2-ae42-4ddd-ad03-743ca7697b00" />
 
