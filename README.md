@@ -37,8 +37,5 @@ Cybersecurity portfolio demonstrating hands-on investigation and analysis across
 - Base64 decoding
 - Network packet analysis
 
-- ## This respository documents my hands-on cybersecurity training as I develop practical skills for a **SOC Analyst/ Cybersecurity Analyst role**.
+## This respository documents my hands-on cybersecurity training as I develop practical skills for a **SOC Analyst/ Cybersecurity Analyst role**.
   
-
-
-- 
