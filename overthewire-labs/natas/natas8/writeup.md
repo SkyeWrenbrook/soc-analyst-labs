@@ -1,4 +1,4 @@
-# OverTheWire-Natas-Level-8
+# overthewire-labs-natas8
 
 <img width="800" height="800" alt="01 natas8-secret-input" src="https://github.com/user-attachments/assets/e588f30e-d9a5-4015-aa4c-1c6c972a89bb" />
 
