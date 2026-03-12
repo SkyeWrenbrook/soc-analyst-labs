@@ -15,7 +15,8 @@ A network traffic capture (PCAP) was provided. The goal was to analyze it in Wir
 ### 1. Load & Review
 Opened the PCAP in Wireshark and reviewed overall traffic flow and protocol distribution.
 
-> <img width="700" height="700" alt="payloadview" src="https://github.com/user-attachments/assets/8df27e14-d967-4da7-a574-3a5b4a3198cb" />
+
+<img width="800" height="800" alt="01 tcp-syn-retransmissions-no-synack" src="https://github.com/user-attachments/assets/21f9a193-42d3-4742-83a0-06cb3bef6592" />
 
 
 ### 2. Filter for Encoded Data
@@ -25,17 +26,20 @@ Used display filters to surface packets with Base64 payloads. Since Base64 strin
 frame contains "=="
 ```
 Also saved handshake filter tcp.flags.syn == 1 || tcp.flags.ack == 1 for later reference as handshake-related packets
-> <img width="800" height="800" alt="payloadview" src="https://github.com/user-attachments/assets/9d417ae6-bef7-4df6-a09e-1a9fd062240b" />
+<img width="800" height="800" alt="02 wireshark-syn-ack-filter-analysis" src="https://github.com/user-attachments/assets/6a5a86ca-7f22-40b0-8ea5-34159293a9a7" />
+
 
 ### 3. Inspect Payloads
 Located Base64-like strings across multiple packets using Wireshark's search. Verified their order and continuity.
 
-> <img width="800" height="800" alt="payload" src="https://github.com/user-attachments/assets/4a91557a-a198-4c11-bbb1-18d4ffdfb74a" />
+<img width="800" height="800" alt="03 wireshark-syn-retransmissions-filter" src="https://github.com/user-attachments/assets/f84bb231-741b-4e72-8e9b-5fce74c06891" />
+
 
 ### 4. Decode
 Extracted and reassembled the Base64 fragments in sequence.
 
-<img width="800" height="800" alt="final" src="https://github.com/user-attachments/assets/36fd9e2d-67e8-41bc-80d4-d99849f4344b" />
+<img width="800" height="800" alt="04 extracted-base64-data" src="https://github.com/user-attachments/assets/5d52fad1-d5ce-4de3-9129-ffe88bf30306" />
+
 
 Then I decoded them in CyberChef using **From Base64**.
 
