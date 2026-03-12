@@ -1,4 +1,4 @@
-# SOC-Analyst-Labs
+# soc-analyst-labs
 
 Cybersecurity Portfolio
 Labs:
