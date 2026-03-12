@@ -1,20 +1,26 @@
 # soc-analyst-labs
 
-Cybersecurity portfolio demonstrating hands-on investigation and analysis across multiple platforms. 
-
+Cybersecurity portfolio demonstrating hands-on security investigations, log analysis, and threat detection through practical labs and incident-style exercises.
 ## Platforms
 
 - picoCTF
-- OverTheWire
+- OverTheWire (Bandit / Natas)
 - HackTheBox (Retired Machines)
-- Google Cybersecurity Professional Certificate Activities
+- Google Cybersecurity Professional Certificate Labs
 
 ## Focus Areas:
-- Network traffic analysis
-- Malware investigation
-- Threat intelligence
 - Log analysis
+- Network traffic analysis
+- Threat detection and investigation
+- Malware investigation
 - Capture-the-flag forensic challenges
+
+## Tools & Technologies
+- SQL (MariaDB)
+- Linux command line
+- Git / GitHub
+- Network analysis concepts
+- Security investigation workflows
 
 ## Lab Writeups
 
