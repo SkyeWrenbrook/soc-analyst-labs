@@ -17,7 +17,7 @@ Upon visiting the challenge website, a simple form was presented allowing users 
 The form accepted user input which appeared to be processed by the server.
 ![Hello World Input](screenshots/03%20input_hello_world.png)
 
-clicking 'OK' produced the following:
+Clicking 'OK' produced the following webpage:
 ![Hello World Response](screenshots/04%20hello_world_response.png)
 
 ### 2. Intercepting the Request
