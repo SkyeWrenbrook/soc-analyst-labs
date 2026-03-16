@@ -10,10 +10,11 @@ This challenge involved exploiting a server-side template injection (ssti) vulne
 ### 1. Initial Reconnaissance
 Challenge Description:
 ![Start Instance](screenshots/01%20start_instance_picoctf.png)
+
 Upon visiting the challenge website, a simple form was presented allowing users to submit text to be displayed as an announcement.
 ![Initial Website](screenshots/02%20website_to_exploit.png)
 
-The form accepted user input which appeared to be processed by the server
+The form accepted user input which appeared to be processed by the server.
 ![Hello World Input](screenshots/03%20input_hello_world.png)
 
 clicking 'OK' produced the following:
@@ -41,7 +42,7 @@ If the server treated this input as normal text, the response would display:
 ```
 {{7*7}}
 ```
-However, the server returned
+However, the server returned:
 ```
 49
 ```
@@ -61,10 +62,11 @@ The response returned a list of files in the appplication directory.
 
 This confirmed that the SSTI vulnerability allowed command execution and revealed the presence of the flag file. 
 
-Executing the command
 ### 5. Retrieving the flag
 After identifying the flag file in the directory, the following payload was used to read its contents:
 ![SSTI Cat Flag Output](screenshots/11%20ssti_cat_flag_output.png)
 
 This executed the 'cat flag' command on the server and returned the contents of the flag file.
 
+## Takeaways
+Improper handling of user input in template engines can lead to SSTI vulnerabilities that allow remote command execution and exposure of sensitive files.
