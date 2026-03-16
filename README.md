@@ -28,6 +28,7 @@ Cybersecurity portfolio demonstrating hands-on security investigations, log anal
 |Lab|Topic|Skills|
 |---|---|---|
 |Phantom Intruder|Network Forensics|Wireshark, PCAP analysis, Base 64 decoding|
+|Server-Side Template Injection 1|Web Exploitation|BurpSuite, web browser|
 
 ### OverTheWire
 |Lab|Topic|Skills|
