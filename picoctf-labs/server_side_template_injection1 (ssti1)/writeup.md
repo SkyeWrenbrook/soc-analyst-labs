@@ -62,11 +62,8 @@ This confirmed that the SSTI vulnerability allowed command execution and reveale
 
 Executing the command
 ### 5. Retrieving the flag
-
-Executing the command 
-```
-cat flag
-```
-allowed the retreval of the flag
-
+After identifying the flag file in the directory, the following payload was used to read its contents:
 ![SSTI Cat Flag Output](screenshots/11%20ssti_cat_flag_output.png)
+
+This executed the 'cat flag' command on the server and returned the contents of the flag file.
+
