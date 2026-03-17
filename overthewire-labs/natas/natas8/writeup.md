@@ -47,10 +47,7 @@ The following hexadecimal string is provided:
 ```
 ### 3. Reverse the Encoding Process
 
-Step 1: Convert hex to ASCII
-Step 2
-
-The following linux command converts hex to ASCII, reverses the string, and decodes Base64
+The following Linux command converts hex to ASCII, reverses the string, and decodes Base64
 
 ```
 echo -n "3d3d516343746d4d6d6c315669563362" | xxd -r -p | rev | base64 -d
