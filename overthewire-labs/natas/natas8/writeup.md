@@ -17,13 +17,18 @@ By inspecting the application logic, the goal is to decode a given hexadecimal s
 ## Steps
 
 ### 1. Inspect Source Code
+
 The first step is to analyze the application by viewing the page source. This can be done by right-clicking the page and selecting "View Page Source", or by using developer tools.
+
 
 <img width="800" height="800" alt="01 natas8-secret-input" src="https://github.com/user-attachments/assets/e588f30e-d9a5-4015-aa4c-1c6c972a89bb" />
 
+
 Viewing the page source shows an encoded string and a function that encodes it.
 
+
 <img width="1000" height="1000" alt="02 natas8-source-code-analysis" src="https://github.com/user-attachments/assets/92ef48b2-421b-499a-aec4-4911a1d1d530" />
+
 
 The function does the following:
 
