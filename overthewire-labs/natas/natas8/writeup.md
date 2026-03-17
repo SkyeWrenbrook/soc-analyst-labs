@@ -43,26 +43,17 @@ To retrieve the original secret, these steps must be reversed.
 The following hexadecimal string is provided:
 
 ```
-3d3d516343746d4d6d6c315669563362
+"3d3d516343746d4d6d6c315669563362"
 ```
 ### 3. Reverse the Encoding Process
 
 Step 1: Convert hex to ASCII
+Step 2
+
+The following linux command converts hex to ASCII, reverses the string, and decodes Base64
 
 ```
-echo "3d3d516343746d4d6d6c315669563362" | xxd -r -p
-```
-
-Step 2: Reverse the string
-
-```
-echo "<output>" | rev
-```
-
-Step 3: Decode Base64
-
-```
-echo "<reversed_output>" | base64 -d
+echo -n "3d3d516343746d4d6d6c315669563362" | xxd -r -p | rev | base64 -d
 ```
 
 ### 4. Result
