@@ -69,7 +69,7 @@ The value is submitted as the secret to complete the challenge.
 <img width="800" height="800" alt="03 natas8-secret-submission" src="https://github.com/user-attachments/assets/311417e4-ea3f-4b29-b577-d25738e1ab31" />
 
 
-The password for Natas 9 is shown
+The password for the next challege is shown and the challenge is solved.
 
 <img width="800" height="800" alt="04 natas8-access-granted" src="https://github.com/user-attachments/assets/e343ca8e-5392-43e9-82a6-f51cc6ea3ec4" />
 
