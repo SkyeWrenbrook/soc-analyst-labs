@@ -29,7 +29,6 @@ Viewing the page source shows an encoded string and a function that encodes it.
 
 <img width="1000" height="1000" alt="02 natas8-source-code-analysis" src="https://github.com/user-attachments/assets/92ef48b2-421b-499a-aec4-4911a1d1d530" />
 
-
 The function does the following:
 
 1. Convert string to hexadecimal
