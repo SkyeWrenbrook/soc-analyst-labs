@@ -35,8 +35,7 @@ The function does the following:
 2. Reverse the string
 3. Encode using Base64
 
-To retrieve the original secret, these steps must be reversed.
-
+This indicates that the stored secret has been encoded using multiple transformations, which must be reversed in the correct order. 
 
 ### 2. Identify the Encoded String
 
@@ -47,7 +46,11 @@ The following hexadecimal string is provided:
 ```
 ### 3. Reverse the Encoding Process
 
-The following Linux command converts hex to ASCII, reverses the string, and decodes Base64
+The following Linux command reverses the encoding process by:
+
+1. Converting hexadecimal to raw bytes
+2. Reversing the resulting string
+3. Decoding the Base64-encoded value
 
 ```
 echo -n "3d3d516343746d4d6d6c315669563362" | xxd -r -p | rev | base64 -d
