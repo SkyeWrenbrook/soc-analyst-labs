@@ -2,7 +2,7 @@
 
 ## Overview
 
-This challenge involves analyzing source code to identify how a secret value is encoded and thenr eversing the encoding process to retrieve the correct input.
+This challenge involves analyzing source code to identify how a secret value is encoded and then reversing the encoding process to retrieve the correct input.
 
 By inspecting the application logic, the goal is to decode a given hexadecimal string using multiple transformations.
 
