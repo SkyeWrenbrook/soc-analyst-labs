@@ -81,7 +81,7 @@ The password for the next challege is shown and the natas8 challenge is solved.
   - Hex encoding
   - String reversal
   - Base64 encoding
-- Being able to recognize encoding patterns is an essential skill in web security and CTF challenges
+- Being able to recognize encoding patterns is an essential skill in web security and CTF exercises
 
 
 
