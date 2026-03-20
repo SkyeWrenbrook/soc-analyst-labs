@@ -15,12 +15,20 @@ ssh bandit0@bandit.labs.overthewire.org -p 2220
 ```
 ```
 password: bandit0
-````
+```
+
+<img width="800" height="800" alt="ssh_bandit0" src="https://github.com/user-attachments/assets/0120dafb-243c-42e2-81ab-f88832363fef" />
+
+
 ### 2. Find the password in the file called readme in the homedirectory by executing the command ls to confirm the file is in the current working directory, and the following command:
 
 ```
 cat readme
 ```
+
+<img width="800" height="800" alt="read_file_home_directory_bandit_0" src="https://github.com/user-attachments/assets/d0dd02ab-aca5-4681-893f-7fe96af87281" />
+
+
 to read the file. 
 
 ## Takeaways
