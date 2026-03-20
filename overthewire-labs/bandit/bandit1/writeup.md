@@ -1,4 +1,4 @@
-overthewire-labs-bandit1  
+# overthewire-labs-bandit1  
 
 ## Overview
 Practice Unix/Linux basics. The password is found in a file called readme in the home directory
