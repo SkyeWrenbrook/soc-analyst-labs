@@ -25,5 +25,5 @@ to read the file.
 
 ## Takeaways
 
-Being able to navigate the linux terminal is fundamental to cybersecurity. Knowing linux commands like cat and ls can assist the soc analyst in completing many security tasks such as reading files. 
+Being able to navigate the linux terminal is fundamental to cybersecurity. Knowing linux commands like cat and ls can assist the soc analyst in completing many security tasks such as reading files and listing contents in a directory.
 
