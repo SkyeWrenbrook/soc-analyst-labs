@@ -26,7 +26,7 @@ password: bandit0
 cat readme
 ```
 
-<img width="800" height="800" alt="read_file_home_directory_bandit_0" src="https://github.com/user-attachments/assets/d0dd02ab-aca5-4681-893f-7fe96af87281" />
+<img width="916" height="510" alt="read_file_home_directory_bandit_0" src="https://github.com/user-attachments/assets/df1a30e2-686f-4e76-a22a-aa7cb44d1615" />
 
 
 to read the file. 
