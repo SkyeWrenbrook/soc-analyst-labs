@@ -3,6 +3,15 @@
 ## Objective
 To practice setting up file sharing and permissions in Windows.
 
+## Tools Used
+- HackTheBox Academy (Lab Environment)
+- Windows Operating System
+- File Explorer
+- Computer Management (Local Users and Groups)
+- NTFS Permissions (Security Tab)
+- SMB Share Permissions (Sharing Tab)
+- Advanced Security Settings
+
 ## Steps
 1. Create a Shared Folder
 
