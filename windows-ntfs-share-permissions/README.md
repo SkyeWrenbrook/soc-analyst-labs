@@ -64,7 +64,7 @@ Now only the HR group can access the shared folder over the network.
 
 <img width="803" height="581" alt="06-hr-ntfs-permissions" src="https://github.com/user-attachments/assets/86eca8a4-66fb-4f5d-9169-9f2a8b25735a" />
 
-## 6. Set Permissiosn on HR Subfolder
+## 6. Set Permissions on HR Subfolder
 
 I disabled inheritance on the HR folder and removed any default groups.
 
