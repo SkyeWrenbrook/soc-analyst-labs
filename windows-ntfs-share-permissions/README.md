@@ -21,7 +21,7 @@ I created a shared folder called Company Data and enabled sharing.
 
 2. Create a Subfolder
 
-Inside that folder, I created another folder called HR. I did this through the GUI by double-clicking on the Company Data folder on the desktop, right clicking in the folder, and creating a new folder called HR.
+Inside that folder, I created another folder called HR.
 
 <img width="1024" height="627" alt="02-create-subfolder-hr" src="https://github.com/user-attachments/assets/9ad2aaff-0f9b-4df7-b5bc-a9c9457b93f7" />
 
