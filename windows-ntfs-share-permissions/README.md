@@ -27,7 +27,7 @@ Inside that folder, I created another folder called HR.
 
 3. Create a User
 
-I created a user named Jim by opening Computer Management, navigating to "Users", right clicking in the field and selecting "New User", and adding the name "Jim" to the "Username" field.
+I created a user named Jim by opening Computer Management, navigating to "Users", right clicking in the field and selecting "New User", and adding the name "Jim" to "User name".
 
 I also unchecked:
   "User must change password at logon"
