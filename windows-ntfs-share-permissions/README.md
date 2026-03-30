@@ -83,7 +83,7 @@ This makes sure only HR can access sensitive data inside the HR folder, even if 
 
 <img width="847" height="608" alt="07-disable-inheritance" src="https://github.com/user-attachments/assets/7fb4d91f-eb42-4f0c-bcb6-cafd4949e6af" />
 
-<img width="922" height="636" alt="08-set-hr-ntfs-permissions" src="https://github.com/user-attachments/assets/d06eb732-29a9-46ef-958a-dac30eaa2df1" />
+<img width="847" height="608" alt="08-set-hr-ntfs-permissions" src="https://github.com/user-attachments/assets/d06eb732-29a9-46ef-958a-dac30eaa2df1" />
 
 ## Overview
 
