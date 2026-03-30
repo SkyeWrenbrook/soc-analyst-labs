@@ -59,6 +59,7 @@ After that, I configured NTFS permissions in the Security tab and gave HR:
 - Write
 
 Now only the HR group can access the shared folder over the network.
+This follows the principle of least privilege.
 
 <img width="777" height="605" alt="05-hr-group-with-read-and-change-checked" src="https://github.com/user-attachments/assets/48ea5062-2b60-423c-a18f-e9ae6bfc9f28" />
 
@@ -66,9 +67,11 @@ Now only the HR group can access the shared folder over the network.
 
 ## 6. Set Permissions on HR Subfolder
 
-I disabled inheritance on the HR folder and removed any default groups.
+I opened the HR folder properties, went to the Security tab, and disabled inheritance.
 
-Then I added only the **HR** group and gave it:
+Then I removed any default users and added only the **HR** group.
+
+I gave HR the following permissions:
 
 - Modify
 - Read & execute
@@ -76,24 +79,11 @@ Then I added only the **HR** group and gave it:
 - Read
 - Write
 
-This makes sure only HR can access sensitive data inside the HR folder.
+This makes sure only HR can access sensitive data inside the HR folder, even if someone can access the main shared folder.
 
 <img width="847" height="608" alt="07-disable-inheritance" src="https://github.com/user-attachments/assets/7fb4d91f-eb42-4f0c-bcb6-cafd4949e6af" />
 
-
-## 7. Add the HR Group to the NTFS Permissions List of the HR Subfolder
-
-I did this by opening the HR subfolder properties, going to the security tab, disabling inheritance, adding the HR group, and setting NTFS permissions for HR as:
-
-- modify
-- read & execute
-- list folder contents
-- read
-- write
-
 <img width="922" height="636" alt="08-set-hr-ntfs-permissions" src="https://github.com/user-attachments/assets/d06eb732-29a9-46ef-958a-dac30eaa2df1" />
-
-This ensures that only the HR group can access sensitive files inside the HR folder, even if someone can access the main shared folder.
 
 ## Overview
 
