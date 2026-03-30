@@ -30,7 +30,7 @@ Inside that folder, I created another folder called HR.
 I created a user named Jim by opening Computer Management, navigating to "Users", right clicking in the field and selecting "New User", and adding the name "Jim" to "User name".
 
 I also unchecked:
-  "User must change password at logon"
+  "User must change password at next logon"
   
 <img width="987" height="652" alt="03-computer-management-create-new-user" src="https://github.com/user-attachments/assets/db2bac63-42ca-423b-a886-66efed1ba3f9" />
 
