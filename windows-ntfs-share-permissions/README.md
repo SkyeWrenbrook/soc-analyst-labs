@@ -52,17 +52,23 @@ Then I gave NTFS permissions by checking:
 - list folder contents
 - read
 - write
-
+- 
+<img width="795" height="567" alt="07-ntfs-permissions-company-data" src="https://github.com/user-attachments/assets/e3f24017-f3b8-43e5-959a-e5ee4bffb125" />
 
 7. Add the HR group to the NTFS permissions list of the HR subfolder
 
-I did this by opening the HR subfolder properties, going to the security tab, disabling inheritance, adding the HR group, and setting NTFS permissions for HR to be
+I did this by opening the HR subfolder properties, going to the security tab, disabling inheritance, adding the HR group, and setting NTFS permissions for HR as:
+
 - modify
 - read & execute
 - list folder contents
 - read
 - write
 
-<img width="922" height="636" alt="07-set-hr-ntfs-permissions" src="https://github.com/user-attachments/assets/289514c8-c878-4f62-896f-37fc858c1229" />
+<img width="922" height="636" alt="08-set-hr-ntfs-permissions" src="https://github.com/user-attachments/assets/d06eb732-29a9-46ef-958a-dac30eaa2df1" />
 
-Now the HR group has the permissions we set on the HR subfolder
+Now the HR group has the permissions we set on the HR subfolder.
+
+## Overview
+
+In this project, I configured Windows file sharing and NTFS permissions to enforce controlled access to folders. I created users and groups, removed default access, and applied least privilege by disabling inheritance and assigning permissions only to the HR group. This helped me understand how access control works in real environments and how misconfigurations could lead to unauthorized access. 
