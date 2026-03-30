@@ -89,4 +89,4 @@ This makes sure only HR can access sensitive data inside the HR folder, even if 
 
 In this project, I configured Windows file sharing and NTFS permissions to enforce controlled access to folders. I created users and groups, removed default access, and applied least privilege by disabling inheritance and assigning permissions only to the HR group. This helped me understand how access control works in real environments and how misconfigurations could lead to unauthorized access. 
 
-Misconfigured permissions can allow unauthroized users to access sensitive data. By removing default gruops and disabling inheritence, I made sure that only those groups who needed to access HR group had access. This is important in the real world where sensitive data like employee records must be protected. 
+Misconfigured permissions can allow unauthroized users to access sensitive data. By removing default groups and disabling inheritance, I made sure that only those groups who needed to access HR group had access. This is important in the real world where sensitive data like employee records must be protected. 
