@@ -1,0 +1,68 @@
+# Windows File Sharing & NTFS Permissions lab
+
+## Objective
+To practice setting up file sharing and permissions in Windows.
+
+## Steps
+1. Create a shared folder
+
+I created a shared folder called Company Data and enabled sharing.
+
+<img width="1027" height="552" alt="01-enable-sharing" src="https://github.com/user-attachments/assets/03e8b2be-2df7-4d2c-8d96-4fe973e57926" />
+
+2. Create a subfolder
+
+Inside that folder, I created another folder called HR. I did this through the GUI by double-clicking on the Company Data folder on the desktop, right clicking in the folder, and creating a new folder called HR.
+
+<img width="1024" height="627" alt="02-create-subfolder-hr" src="https://github.com/user-attachments/assets/9ad2aaff-0f9b-4df7-b5bc-a9c9457b93f7" />
+
+3. Create a user
+
+I created a user named Jim by opening Computer Management, navigating to "Users", right clicking in the field and selecting "New User", and adding the name "Jim" to the "Username" field.
+
+I also unchecked:
+  "User must change password at logon"
+  
+<img width="987" height="652" alt="03-computer-management-create-new-user" src="https://github.com/user-attachments/assets/db2bac63-42ca-423b-a886-66efed1ba3f9" />
+
+5. Add user to group
+
+I added Jim to the HR group by adding a new group called HR in the groups tab under "Local Users and Groups" in Computer Management. Then I right-clicked on HR, then clicked properties, then added Jim to the list of members in HR.
+
+<img width="985" height="707" alt="04-add-jim-to-hr-group" src="https://github.com/user-attachments/assets/b42831cd-efef-4041-b7a5-5592f9117e36" />
+
+6. Set permissions on shared folder (Company Data)
+
+I first removed the default group (Everyone) by right-clicking on the Company Data folder on the Desktop, clicked properties, then security, then removed the default group.
+
+Then I added HR group by clicking "Edit" in the security tab, and adding HR where it says "enter the object names to select", then I clicked OK.
+
+I then gave HR share permissions by navigating to the sharing tab, then clicking advanced permissions, and checking "read" and "change" and clicking apply, then ok.
+Now HR can access the shared folder over the network.
+
+<img width="777" height="605" alt="05-hr-group-with-read-and-change-checked" src="https://github.com/user-attachments/assets/48ea5062-2b60-423c-a18f-e9ae6bfc9f28" />
+
+I then disabled inheritance by going back to properties on the HR subfolder, clicking the security tab, then clicking advanced, and then clicking  disable inheritance. If necessary, I would remove the default group also.
+
+<img width="847" height="608" alt="06-disable-inheritance" src="https://github.com/user-attachments/assets/7c1426a9-cdb0-4084-8650-e65254856c0b" />
+
+Then I gave NTFS permissions by checking: 
+- modify
+- read & execute
+- list folder contents
+- read
+- write
+
+
+7. Add the HR group to the NTFS permissions list of the HR subfolder
+
+I did this by opening the HR subfolder properties, going to the security tab, disabling inheritance, adding the HR group, and setting NTFS permissions for HR to be
+- modify
+- read & execute
+- list folder contents
+- read
+- write
+
+<img width="922" height="636" alt="07-set-hr-ntfs-permissions" src="https://github.com/user-attachments/assets/289514c8-c878-4f62-896f-37fc858c1229" />
+
+Now the HR group has the permissions we set on the HR subfolder
