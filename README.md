@@ -5,7 +5,7 @@ Cybersecurity portfolio demonstrating hands-on security investigations, log anal
 
 - picoCTF
 - OverTheWire (Bandit / Natas)
-- HackTheBox (Retired Machines)
+- HackTheBox Labs
 - Google Cybersecurity Professional Certificate Labs
 
 ## Focus Areas:
@@ -21,6 +21,7 @@ Cybersecurity portfolio demonstrating hands-on security investigations, log anal
 - Git / GitHub
 - Network analysis concepts
 - Security investigation workflows
+- Windows command line
 
 ## Lab Writeups
 
@@ -39,6 +40,7 @@ Cybersecurity portfolio demonstrating hands-on security investigations, log anal
 - Wireshark
 - Cyberchef
 - Linux
+- Windows
 - SQL
 - Burp Suite
 - Base64 decoding
