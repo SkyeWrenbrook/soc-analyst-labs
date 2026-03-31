@@ -61,9 +61,9 @@ After that, I configured NTFS permissions in the Security tab and gave HR:
 Now only the HR group can access the shared folder over the network.
 This follows the principle of least privilege.
 
-<img width="1027" height="552" alt="05-hr-group-with-read-and-change-checked" src="https://github.com/user-attachments/assets/48ea5062-2b60-423c-a18f-e9ae6bfc9f28" />
+<img width="1027" height="800" alt="05-hr-group-with-read-and-change-checked" src="https://github.com/user-attachments/assets/48ea5062-2b60-423c-a18f-e9ae6bfc9f28" />
 
-<img width="1027" height="552" alt="06-hr-ntfs-permissions" src="https://github.com/user-attachments/assets/86eca8a4-66fb-4f5d-9169-9f2a8b25735a" />
+<img width="1027" height="800" alt="06-hr-ntfs-permissions" src="https://github.com/user-attachments/assets/86eca8a4-66fb-4f5d-9169-9f2a8b25735a" />
 
 ## 6. Set Permissions on HR Subfolder
 
@@ -81,7 +81,7 @@ I gave HR the following permissions:
 
 This makes sure only HR can access sensitive data inside the HR folder, even if someone can access the main shared folder.
 
-<img width="1027" height="552" alt="07-disable-inheritance" src="https://github.com/user-attachments/assets/7fb4d91f-eb42-4f0c-bcb6-cafd4949e6af" />
+<img width="1027" height="800" alt="07-disable-inheritance" src="https://github.com/user-attachments/assets/7fb4d91f-eb42-4f0c-bcb6-cafd4949e6af" />
 
 <img width="1027" height="800" alt="08-set-hr-ntfs-permissions" src="https://github.com/user-attachments/assets/d06eb732-29a9-46ef-958a-dac30eaa2df1" />
 
