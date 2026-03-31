@@ -25,7 +25,7 @@ I created a shared folder called Company Data and enabled sharing.
 
 Inside that folder, I created another folder called HR.
 
-<img width="1024" height="627" alt="02-create-subfolder-hr" src="https://github.com/user-attachments/assets/9ad2aaff-0f9b-4df7-b5bc-a9c9457b93f7" />
+<img width="1027" height="552" alt="02-create-subfolder-hr" src="https://github.com/user-attachments/assets/9ad2aaff-0f9b-4df7-b5bc-a9c9457b93f7" />
 
 ## 3. Create a User
 
@@ -34,13 +34,13 @@ I created a user named **Jim** in Computer Management.
 I also unchecked:
 - User must change password at logon
   
-<img width="987" height="652" alt="03-computer-management-create-new-user" src="https://github.com/user-attachments/assets/db2bac63-42ca-423b-a886-66efed1ba3f9" />
+<img width="1027" height="552" alt="03-computer-management-create-new-user" src="https://github.com/user-attachments/assets/db2bac63-42ca-423b-a886-66efed1ba3f9" />
 
 ## 4. Add User to a Group
 
 I added **Jim** to the HR group using Local Users and Groups.
 
-<img width="985" height="707" alt="04-add-jim-to-hr-group" src="https://github.com/user-attachments/assets/b42831cd-efef-4041-b7a5-5592f9117e36" />
+<img width="1027" height="552" alt="04-add-jim-to-hr-group" src="https://github.com/user-attachments/assets/b42831cd-efef-4041-b7a5-5592f9117e36" />
 
 ## 5. Set Permissions on a Shared Folder (Company Data)
 
@@ -61,9 +61,9 @@ After that, I configured NTFS permissions in the Security tab and gave HR:
 Now only the HR group can access the shared folder over the network.
 This follows the principle of least privilege.
 
-<img width="777" height="605" alt="05-hr-group-with-read-and-change-checked" src="https://github.com/user-attachments/assets/48ea5062-2b60-423c-a18f-e9ae6bfc9f28" />
+<img width="1027" height="552" alt="05-hr-group-with-read-and-change-checked" src="https://github.com/user-attachments/assets/48ea5062-2b60-423c-a18f-e9ae6bfc9f28" />
 
-<img width="777" height="605" alt="06-hr-ntfs-permissions" src="https://github.com/user-attachments/assets/86eca8a4-66fb-4f5d-9169-9f2a8b25735a" />
+<img width="1027" height="552" alt="06-hr-ntfs-permissions" src="https://github.com/user-attachments/assets/86eca8a4-66fb-4f5d-9169-9f2a8b25735a" />
 
 ## 6. Set Permissions on HR Subfolder
 
@@ -81,9 +81,9 @@ I gave HR the following permissions:
 
 This makes sure only HR can access sensitive data inside the HR folder, even if someone can access the main shared folder.
 
-<img width="847" height="608" alt="07-disable-inheritance" src="https://github.com/user-attachments/assets/7fb4d91f-eb42-4f0c-bcb6-cafd4949e6af" />
+<img width="1027" height="552" alt="07-disable-inheritance" src="https://github.com/user-attachments/assets/7fb4d91f-eb42-4f0c-bcb6-cafd4949e6af" />
 
-<img width="847" height="608" alt="08-set-hr-ntfs-permissions" src="https://github.com/user-attachments/assets/d06eb732-29a9-46ef-958a-dac30eaa2df1" />
+<img width="1027" height="552" alt="08-set-hr-ntfs-permissions" src="https://github.com/user-attachments/assets/d06eb732-29a9-46ef-958a-dac30eaa2df1" />
 
 ## Overview
 
