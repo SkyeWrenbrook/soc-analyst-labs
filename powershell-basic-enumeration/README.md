@@ -15,7 +15,7 @@ The goal isn't to memorize commands, but to start getting comfortable looking at
 
 ## 1. Check current user
 
-'''
+bash'''
 whoami
 '''
 
