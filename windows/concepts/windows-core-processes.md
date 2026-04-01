@@ -10,7 +10,7 @@ Windows uses core system processes to handle authentication, system services, an
 - lsass.exe creates access tokens and stores credential-related information in memory
 - svchost.exe is used to run multiple Windows services in the background
 - winlogon.exe manages user logon and logoff processes
-- These processes are critical to system operation and should not be terminated
+- These processes are critical to system operation and should not be terminated under normal conditions
 
 ## One Example
 
@@ -20,6 +20,6 @@ If this process is compromised, attackers may be able to access sensitive creden
 ## Key Takeaways
 
 - lsass.exe is a high-value target because it handles authentication and credentials
-- svchost.exe runs many background services and often appears multiple times
+- svchost.exe may appears multiple times because it hosts different services
 - winlogon.exe is responsible for managing user logon processes
 - Understanding normal process behavior helps detect anomalies and potential attacks
