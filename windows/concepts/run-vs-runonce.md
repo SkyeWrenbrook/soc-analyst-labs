@@ -24,7 +24,9 @@ Run and RunOnce registry keys are used by Windows to automatically execute progr
 ## Example
 
 If a program is added to HKCU\Software\Microsoft\Windows\CurrentVersion\Run, it will execute every time the currently logged-in user logs in. 
+
 If a program is added to HKLM\Software\Microsoft\Windows\currentVersion\Run, it will execute for all users on the system at login.
+
 A program added to a RunOnce key (HKCU or HKLM) will execute one time at the next login and then the registry entry is removed. 
 
 ## One Takeaway
