@@ -10,6 +10,7 @@ Run and RunOnce registry keys are used by Windows to automatically execute progr
 - The Run key executes programs every time a user logs in
 - The RunOnce key executes a program only once and then removes the entry
 - The Run and RunOnce keys are located at:
+  
   HKCU\Software\Microsoft\Windows\CurrentVersion\Run
   HKLM\Software\Microsoft\Windows\CurrentVersion\Run
   HKCU\Software\Microsoft\Windows\CurrentVersion\RunOnce
