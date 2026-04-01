@@ -14,7 +14,13 @@ SMB (Server Message Block) is a protocol used by Windows to connect shared resou
 - SMB is commonly used in internal networks, but misconfigured shares or exposed services can create security risks
 - Attackers may attempt to access shared resources, move laterally within a network, or exploit vulnerabilities if proper controls are not in place
 - SMB commonly operates over port 445
-- SMB can be absued for lateral movement if attackers gain access to a system and attempt to reach other systems on the network
+- SMB can be absued for lateral movement if attackers gain access toa  system and use it to access other systems on the network
+
+## One Example
+
+A user connects to a shared folder on a file server using \\FileServer\HR. This shared folder maps to a directory like C:\Shared\HR on the server.
+When the user accesses the folder over the network, the SMB server authenticates the user and checks both Share and NTFS permissions.
+If the user only has Read access, they will be able to view files such as C:\Shared\HR\policies.docx but will not be able to modify or delete them.
 
 ## Key Takeaways
 
