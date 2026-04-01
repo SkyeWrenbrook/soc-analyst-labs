@@ -1,4 +1,4 @@
-# Windows File Sharing & NTFS Permissions Lab
+# File Sharing & NTFS Permissions Lab
 
 ## Objective
 To practice setting up file sharing and permissions in Windows.
