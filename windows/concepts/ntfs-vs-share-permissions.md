@@ -9,7 +9,7 @@
   
 ## One Example
 
-If a user has full control in NTFS but only has Read access on the Share, their effective access over the network is Read
+If a user has full control in NTFS but only has Read access on the Share, their access over the network is Read
 
 ## One Takeaway
 
