@@ -11,10 +11,10 @@ Run and RunOnce registry keys are used by Windows to automatically execute progr
 - The RunOnce key executes a program only once and then removes the entry
 - The Run and RunOnce keys are located at:
   
-  HKCU\Software\Microsoft\Windows\CurrentVersion\Run
-  HKLM\Software\Microsoft\Windows\CurrentVersion\Run
-  HKCU\Software\Microsoft\Windows\CurrentVersion\RunOnce
-  HKLM\Software\Microsoft\Windows\CurrentVersion\RunOnce
+  - HKCU\Software\Microsoft\Windows\CurrentVersion\Run
+  - HKLM\Software\Microsoft\Windows\CurrentVersion\Run
+  - HKCU\Software\Microsoft\Windows\CurrentVersion\RunOnce
+  - HKLM\Software\Microsoft\Windows\CurrentVersion\RunOnce
 - HKCU (HKEY_CURRENT_USER) applies to the currently logged-in user
 - HKLM (HKEY_LOCAL_MACHINE) applies to the entire system and affects all users
 - HKLM keys require administrative privileges to modify, while HKCU keys can be modified by the user
