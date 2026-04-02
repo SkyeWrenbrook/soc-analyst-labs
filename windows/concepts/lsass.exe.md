@@ -11,7 +11,7 @@ It is critical to system security because it manages user credentials in memory,
 - Understand how to verify normal vs abnormal process characteristics
 - Develop awareness of suspicious indicators, such as unexpected file paths (e.g., user or Temp directories)
 
-# Tools Used
+## Tools Used
 - Windows virtual machine
 - Task Manager (process observation)
 - Windows File Explorer (file path verification)
