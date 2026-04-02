@@ -37,6 +37,7 @@ These deviations may indicate masquerading malware or unauthorized access attemp
 
 <img width="1127" height="76" alt="lsass exe-task-manager" src="https://github.com/user-attachments/assets/b85a120b-6f32-4314-b822-b74f4d59f5be" />
 
+
 Observed 'lsass.exe' running in Task Manager (details tab) under SYSTEM privileges.
 
 Key observations:
