@@ -45,5 +45,10 @@ Cybersecurity portfolio demonstrating hands-on security investigations, log anal
 - Burp Suite
 - Base64 decoding
 - Network packet analysis
+- Windows virtual machine
+- Task Manager (process observation)
+- Windows File Explorer (file path verification)
+- Command Prompt / Terminal (process inspection)
+
 
   
