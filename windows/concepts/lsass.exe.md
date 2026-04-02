@@ -7,9 +7,9 @@ It is critical to system security because it manages user credentials in memory,
 
 ## Objective
 - Observe lsass.exe in a real Windows environment
-- Identify its expected location and behavior (e.g., System32, SYSTEM privileges)
+- Identify its expected location and behavior (System32, SYSTEM privileges, number of instances, parent process, startup timing, etc)
 - Understand how to verify normal vs abnormal process characteristics
-- Develop awareness of suspicious indicators, such as unexpected file paths (e.g., user or Temp directories)
+- Develop awareness of suspicious indicators, such as unexpected file paths (e.g., User or Temp directories)
 
 ## What I learned
 - lsass.exe is a single, critical Windows process responsible for authentication and security policy enforcement
@@ -28,15 +28,7 @@ Normal observation:
 - User: SYSTEM
 - Single instance running
 
-Suspicious scenerio:
-- 'lsass.exe' is found running from C:\Users\Public\lsass.exe
-- Multiple instances of 'lsass.exe' are observed
-- The process is spawned by an unusual parent process
-
-These deviations may indicate masquerading malware or unauthorized access attempts and should be investigated further.
-
 <img width="1127" height="76" alt="lsass exe-task-manager" src="https://github.com/user-attachments/assets/b85a120b-6f32-4314-b822-b74f4d59f5be" />
-
 
 Observed 'lsass.exe' running in Task Manager (details tab) under SYSTEM privileges.
 
@@ -46,8 +38,14 @@ Key observations:
 - User: SYSTEM
 - Description: Local Security Authority Process
 
-This aligns with expected normal behavior. Any deviation 9e.g., multiple instances, incorrect path, or unusual parent process) may indicate suspicious activity.
-  
+This aligns with expected normal behavior.
+
+Suspicious scenerio:
+- 'lsass.exe' is found running from C:\Users\Public\lsass.exe
+- Multiple instances of 'lsass.exe' are observed
+- The process is spawned by an unusual parent process
+
+These deviations may indicate masquerading malware or unauthorized access attempts and should be investigated further.
 
 ## Key Takeaways
 - Verify both process path and parent process to detect anomalies
