@@ -21,6 +21,20 @@ It is critical to system security because it manages user credentials in memory,
 
 ## Example
 
+A SOC analyst is reviewing processes on a Windows system and observes an instance of "lsass.exe".
+
+Normal observation:
+- Path: C:\Windows\System32\lsass.exe
+- User: SYSTEM
+- Single instance running
+
+Suspicious scenerio:
+- 'lsass.exe' is found running from C:\Users\Public\lsass.exe
+- Multiple instances of 'lsass.exe' are observed
+- The process is spawned by an unusual parent process
+
+These deviations may indicate masquerading malware or unauthorized access attempts and should be investigated furtehr.
+
 ## Key Takeaways
 - Verify both process path and parent process to detect anomalies
 - Multiple instances of LSASS should be treated as a high-priority alert
