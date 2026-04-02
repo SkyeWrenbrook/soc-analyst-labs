@@ -1,5 +1,9 @@
 # NTFS vs Share Permissions
 
+# Overivew
+
+NTFS and Share Permissions are two primary types of permissions that exist in Windows. Understanding them is crucial for proper security configuration. 
+
 # What I Learned
 
 - NTFS permissions apply locally and over the network
