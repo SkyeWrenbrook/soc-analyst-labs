@@ -33,7 +33,20 @@ Suspicious scenerio:
 - Multiple instances of 'lsass.exe' are observed
 - The process is spawned by an unusual parent process
 
-These deviations may indicate masquerading malware or unauthorized access attempts and should be investigated furtehr.
+These deviations may indicate masquerading malware or unauthorized access attempts and should be investigated further.
+
+<img width="1127" height="76" alt="lsass exe-task-manager" src="https://github.com/user-attachments/assets/b85a120b-6f32-4314-b822-b74f4d59f5be" />
+
+Observed 'lsass.exe' running in Task Manager (details tab) under SYSTEM privileges.
+
+Key observations:
+- Single instance running
+- Status: Running
+- User: SYSTEM
+- Description: Local Security Authority Process
+
+This aligns with expected normal behavior. Any deviation 9e.g., multiple instances, incorrect path, or unusual parent process) may indicate suspicious activity.
+  
 
 ## Key Takeaways
 - Verify both process path and parent process to detect anomalies
