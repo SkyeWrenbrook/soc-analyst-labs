@@ -11,6 +11,12 @@ It is critical to system security because it manages user credentials in memory,
 - Understand how to verify normal vs abnormal process characteristics
 - Develop awareness of suspicious indicators, such as unexpected file paths (e.g., User or Temp directories)
 
+## Tools Used
+- Task Manager
+
+## Environment
+- Windows 11 (local system)
+
 ## What I learned
 - lsass.exe is a single, critical Windows process responsible for authentication and security policy enforcement
 - It runs continuously after system boot under SYSTEM privileges
