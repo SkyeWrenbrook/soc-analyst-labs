@@ -4,6 +4,11 @@
 
 Run and RunOnce registry keys are used by Windows to automatically execute programs when a user logs in. These keys are commonly used by applications, but can also be abused for persistence.
 
+## Environment
+- Windows 11 (Local Environment)
+
+## Tools Used
+- PowerShell
 
 ## What I learned
 
