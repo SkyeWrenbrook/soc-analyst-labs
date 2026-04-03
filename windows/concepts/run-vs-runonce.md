@@ -7,9 +7,6 @@ Run and RunOnce registry keys are used by Windows to automatically execute progr
 ## Environment
 - Windows 11 (Local Environment)
 
-## Tools Used
-- PowerShell
-
 ## What I learned
 
 - The Run key executes programs every time a user logs in
