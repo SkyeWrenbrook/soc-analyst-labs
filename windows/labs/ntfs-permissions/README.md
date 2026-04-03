@@ -25,7 +25,7 @@ I created a shared folder called Company Data and enabled sharing.
 
 Inside that folder, I created another folder called HR.
 
-<img width="1027" height="552" alt="02-create-subfolder-hr" src="https://github.com/user-attachments/assets/9ad2aaff-0f9b-4df7-b5bc-a9c9457b93f7" />
+<img width="1027" height="700" alt="02-create-subfolder-hr" src="https://github.com/user-attachments/assets/9ad2aaff-0f9b-4df7-b5bc-a9c9457b93f7" />
 
 ## 3. Create a User
 
@@ -34,13 +34,13 @@ I created a user named **Jim** in Computer Management.
 I also unchecked:
 - User must change password at logon
   
-<img width="1027" height="552" alt="03-computer-management-create-new-user" src="https://github.com/user-attachments/assets/db2bac63-42ca-423b-a886-66efed1ba3f9" />
+<img width="1027" height="700" alt="03-computer-management-create-new-user" src="https://github.com/user-attachments/assets/db2bac63-42ca-423b-a886-66efed1ba3f9" />
 
 ## 4. Add User to a Group
 
 I added **Jim** to the HR group using Local Users and Groups.
 
-<img width="1027" height="552" alt="04-add-jim-to-hr-group" src="https://github.com/user-attachments/assets/b42831cd-efef-4041-b7a5-5592f9117e36" />
+<img width="1027" height="700" alt="04-add-jim-to-hr-group" src="https://github.com/user-attachments/assets/b42831cd-efef-4041-b7a5-5592f9117e36" />
 
 ## 5. Set Permissions on a Shared Folder (Company Data)
 
