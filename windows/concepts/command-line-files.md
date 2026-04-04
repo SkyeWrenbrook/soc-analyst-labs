@@ -1,135 +1,143 @@
 # Windows CMD – Directories & Files Commands
 
+# Overview
+
+Basic Windows command-line tools used to navigate, view, and manipulate files and directories.
+
 ## Navigation & Listing
 
-### cd
+## cd
 Display or change the current directory.
 
-### chdir
+## chdir
 Same as `cd`, used to change the working directory.
 
-### dir
+## dir
 List files and directories in the current path.
 
-### tree
+## tree
 Display directory structure.
 
-### tree /F
+## tree /F
 Display directory structure including files.
 
 ---
 
 ## Creating Directories
 
-### md
+## md
 Create a new directory.
 
-### mkdir
+## mkdir
 Create a new directory (same as `md`).
 
 ---
 
 ## Deleting Directories
 
-### rd
+## rd
 Remove an empty directory.
 
-### rmdir
+## rmdir
 Remove an empty directory (same as `rd`).
 
-### rd /S
+## rd /S
 Remove a directory and all its contents.
 
 ---
 
 ## Moving Directories
 
-### move
+## move
 Move a file or directory from one location to another.
 
 ---
 
 ## Copying Files & Directories
 
-### xcopy
+## xcopy
 Copy files and directories.
 
-### xcopy source destination /E
+## xcopy source destination /E
 Copy all files and subdirectories, including empty ones.
 
-### xcopy /K
+## xcopy /K
 Preserve file attributes (e.g., read-only, hidden).
 
 ---
 
 ## Advanced Copying
 
-### robocopy
+## robocopy
 Advanced file copy tool that preserves metadata (timestamps, ownership, ACLs, attributes).
 
-### robocopy source destination
+## robocopy source destination
 Copy files/directories with full metadata support.
 
-### robocopy /MIR
+## robocopy /MIR
 Mirror source to destination (can delete extra files in destination).
 
-### robocopy /L
+## robocopy /L
 Preview command without executing (dry run).
 
-### robocopy /A-:SH
+## robocopy /A-:SH
 Remove system and hidden attributes from copied files.
 
 ---
 
 ## Viewing File Contents
 
-### more
+## more
 Display output one page at a time.
 
-### more filename
+## more filename
 View file contents page by page.
 
-### more /S
+## more /S
 Remove extra blank lines when displaying output.
 
-### command | more
+## command | more
 Pipe output to display it one screen at a time.
 
 ---
 
-### type
+## type
 Display contents of a file.
 
-### type file1 file2
+## type file1 file2
 Display multiple files.
 
-### type file1 >> file2
+## type file1 >> file2
 Append contents of one file to another.
 
 ---
 
-### openfiles
+## openfiles
 Display open files and the users accessing them (requires admin privileges).
 
 ---
 
 ## Creating & Modifying Files
 
-### echo text > file
+## echo text > file
 Create a file with content.
 
-### echo text >> file
+## echo text >> file
 Append text to an existing file.
 
 ---
 
-### fsutil file createNew filename size
+## fsutil file createNew filename size
 Create a new file with a specified size.
 
 ---
 
-### ren
+## ren
 Rename a file.
 
-### rename
+## rename
 Rename a file (same as `ren`).
+
+## Key Takeaway
+
+Understanding how files are copied and accessed is essential for detecting abnormal behavior in Windows systems.
