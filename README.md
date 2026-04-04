@@ -1,27 +1,53 @@
-# soc-analyst-labs
+# SOC Analyst Labs
 
-Cybersecurity portfolio demonstrating hands-on security investigations, log analysis, and threat detection through practical labs and incident-style exercises.
+Hands-on cybersecurity portfolio focused on building practical SOC skills through log analysis, system investigation, and security-focused labs.
+
+## Approach
+
+This repository focuses on understanding how systems behave under normal conditions and identifying deviations that may indicate suspicious activity.
+
+Each lab emphasizes:
+- Observing system behavior  
+- Applying structured analysis  
+- Documenting findings clearly  
+
 ## Platforms
 
 - picoCTF
 - OverTheWire (Bandit / Natas)
 - HackTheBox Labs
 - Google Cybersecurity Professional Certificate Labs
+- Self-Created Labs
 
-## Focus Areas:
-- Log analysis
-- Network traffic analysis
-- Threat detection and investigation
-- Malware investigation
-- Capture-the-flag forensic challenges
+## Focus Areas
 
+- Log analysis  
+- Network traffic analysis  
+- Threat detection and investigation  
+- Malware investigation fundamentals  
+- Capture-the-flag (CTF) challenges
+  
 ## Tools & Technologies
-- SQL (MariaDB)
-- Linux command line
-- Windows command line
-- Git / GitHub
-- Network analysis concepts
-- Security investigation workflows
+
+- Wireshark  
+- Burp Suite  
+- CyberChef  
+- SQL (MariaDB)  
+- Linux command line  
+- Windows command line  
+- Git / GitHub  
+
+## Environments
+
+- Windows virtual machine  
+- Linux environments  
+
+## Concepts Applied
+
+- Network packet analysis  
+- Base64 encoding/decoding  
+- Process observation  
+- File system navigation  
 
 ## Lab Writeups
 
@@ -36,19 +62,6 @@ Cybersecurity portfolio demonstrating hands-on security investigations, log anal
 |---|---|---|
 |Natas 8|Web exploitation|Source code review, encoding analysis|
 
-## Tools Used
-- Wireshark
-- Cyberchef
-- Linux
-- Windows
-- SQL
-- Burp Suite
-- Base64 decoding
-- Network packet analysis
-- Windows virtual machine
-- Task Manager (process observation)
-- Windows File Explorer (file path verification)
-- Command Prompt / Terminal (process inspection)
 
 
   
