@@ -51,6 +51,8 @@ Each lab emphasizes:
 
 ## Lab Writeups
 
+Documented labs with focus on methodology, tools used, and key takeaways.
+
 ### picoCTF
 |Lab|Topic|Skills|
 |---|---|---|
