@@ -18,10 +18,10 @@ Cybersecurity portfolio demonstrating hands-on security investigations, log anal
 ## Tools & Technologies
 - SQL (MariaDB)
 - Linux command line
+- Windows command line
 - Git / GitHub
 - Network analysis concepts
 - Security investigation workflows
-- Windows command line
 
 ## Lab Writeups
 
