@@ -1,6 +1,6 @@
 # SOC Analyst Labs
 
-Hands-on cybersecurity portfolio focused on building practical SOC skills through log analysis, system investigation, and security-focused labs.
+Hands-on cybersecurity portfolio focused on developing practical SOC skills through log analysis, system investigation, and security labs.
 
 ## Approach
 
