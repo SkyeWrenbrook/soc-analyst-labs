@@ -29,9 +29,7 @@ This flexibility is useful for legitimate customization, such as running one's o
 
 - When a full path is provided, such as C:\Windows\System32\backup.exe, PATH is not used.
 The operating system goes directly to that location and executes the file.
-
 This means unqualified commands rely on PATH, while qualified commands bypass PATH.
-
 Because of this, the order of directories in PATH determines which executable is run when multiple versions exist.
 
 - Windows uses a "first match wins" rule when scanning PATH — whichever matching executable it finds first is the one it runs, without further validation. 
