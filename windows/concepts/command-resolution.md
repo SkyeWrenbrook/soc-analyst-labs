@@ -10,7 +10,7 @@ This creates a distinction between qualified commands (explicit paths) and unqua
 
 ## Tools Used
 
-- Windows CMD
+- CMD
 - Regedit
 
 ## Environment
