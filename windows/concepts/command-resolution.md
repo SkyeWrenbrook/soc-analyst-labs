@@ -49,7 +49,7 @@ Unqualified commands often exist due to common system and development practices,
 - Misconfiguration
   - Scheduled tasks or services may be configured without full paths, unintentionally relying on PATH.
 - Installer behavior
-  - Some software registers executables and religes on PATH instead of using explicit file paths.
+  - Some software registers executables and relies on PATH instead of using explicit file paths.
 
 ## Security Implication
 Because PATH is both configurable data and part of command execution logic, modifying it can directly influence which executables are run. 
