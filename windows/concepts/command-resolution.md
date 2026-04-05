@@ -52,9 +52,9 @@ Unqualified commands often exist due to common system and development practices,
   - Some software registers executables and relies on PATH instead of using explicit file paths.
 
 ## Security Implication
-Because PATH is both configurable data and part of command execution logic, modifying it can directly influence which executables are run. 
-An attacker can place a malicious executable in a directory that appears earlier in PATH.
-Because windows executes the first match without validating its origin, **control over PATH can become control over execution.**
+- Because PATH is both configurable data and part of command execution logic, modifying it can directly influence which executables are run. 
+- An attacker can place a malicious executable in a directory that appears earlier in PATH.
+- Because windows executes the first match without validating its origin, **control over PATH can become control over execution.**
 This enables PATH hijacking: if an attacker places a malicious executable in a directory that appears earlier in PATH, it can be executed instead of the legitimate binary.
 
 ## Key Takeaway
