@@ -19,22 +19,22 @@ This creates a distinction between qualified commands (explicit paths) and unqua
 
 ## What I Learned
 
-When a command is entered without a full path, such as backup.exe, the operating system does not have an explicit path to the executable.
+- When a command is entered without a full path, such as backup.exe, the operating system does not have an explicit path to the executable.
 Instead, it searches through the directories listed in PATH to find it.
 Windows searches this list in order and executes the first match it finds.
-PATH exists as a string in the registry, but at runtime it becomes a search mechanism used by Windows to locate and execute commands.
-Windows is designed to support user-level customization through PATH, allowing user-defined directories to take precedence in command resolution.
+- PATH exists as a string in the registry, but at runtime it becomes a search mechanism used by Windows to locate and execute commands.
+- Windows is designed to support user-level customization through PATH, allowing user-defined directories to take precedence in command resolution.
 This means user-defined directories can take precedence in command resolution, allowing user-installed tools to override system defaults.
 This flexibility is useful for legitimate customization, such as running one's own Python executable instead of the one installed by the System, but it also introduces risk when PATH order can be influenced. 
 
-When a full path is provided, such as C:\Windows\System32\backup.exe, PATH is not used.
+- When a full path is provided, such as C:\Windows\System32\backup.exe, PATH is not used.
 The operating system goes directly to that location and executes the file.
 
-This means unqualified commands rely on PATH, while qualified commands bypass PATH it.
+This means unqualified commands rely on PATH, while qualified commands bypass PATH.
 
 Because of this, the order of directories in PATH determines which executable is run when multiple versions exist.
 
-Windows uses a "first match wins" rule when scanning PATH — whichever matching executable it finds first is the one it runs, without further validation. 
+- Windows uses a "first match wins" rule when scanning PATH — whichever matching executable it finds first is the one it runs, without further validation. 
 It doesn't stop to verify whether that file is actually the intended program. 
 
 ## Example
