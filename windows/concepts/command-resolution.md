@@ -12,7 +12,7 @@ This creates a distinction between qualified commands (explicit paths) and unqua
 
 - CMD
 - Regedit
-- NotebookLM (for the diagram)
+- NotebookLM (for the diagrams)
 
 ## Environment
 
