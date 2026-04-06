@@ -12,7 +12,6 @@ This creates a distinction between qualified commands (explicit paths) and unqua
 
 - CMD
 - Regedit
-- NotebookLM (for the diagrams)
 
 ## Environment
 
@@ -65,6 +64,7 @@ To visualize how this process works in practice:
 - An attacker can place a malicious executable in a directory that appears earlier in PATH.
 - Because windows executes the first match without validating its origin, **control over PATH can become control over execution.**
 This enables PATH hijacking: if an attacker places a malicious executable in a directory that appears earlier in PATH, it can be executed instead of the legitimate binary.
-nm
+
+
 ## Key Takeaway
 Windows trusts PATH order when resolving commands, making search order a critical factor in both system behavior and potential exploitation.
