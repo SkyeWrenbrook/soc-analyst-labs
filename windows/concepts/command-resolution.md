@@ -41,6 +41,9 @@ PATH is stored at both the user and system level in the Windows Registry.
 These values are combined at runtime, forming the final PATH order that Windows uses when resolving commands.
 That combined result is what determines the actual search order whenever a command is resolved.
 
+<img width="900" height="900" alt="image" src="https://github.com/user-attachments/assets/812e70d2-8e99-46fa-acba-35678f812ece" />
+
+
 ## How Unqualified Commands are Introduced
 
 Unqualified commands often exist due to common system and development practices, not necessarily malicious intent.
@@ -50,6 +53,8 @@ Unqualified commands often exist due to common system and development practices,
   - Scheduled tasks or services may be configured without full paths, unintentionally relying on PATH.
 - Installer behavior
   - Some software registers executables and relies on PATH instead of using explicit file paths.
+ 
+
 
 ## Security Implication
 - Because PATH is both configurable data and part of command execution logic, modifying it can directly influence which executables are run. 
