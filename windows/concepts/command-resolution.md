@@ -55,6 +55,7 @@ Unqualified commands often exist due to common system and development practices,
 - Installer behavior
   - Some software registers executables and relies on PATH instead of using explicit file paths.
  
+<img width="900" height="900" alt="image" src="https://github.com/user-attachments/assets/d199bd60-56cd-47ed-9161-217cd432d978" />
 
 
 ## Security Implication
@@ -62,6 +63,6 @@ Unqualified commands often exist due to common system and development practices,
 - An attacker can place a malicious executable in a directory that appears earlier in PATH.
 - Because windows executes the first match without validating its origin, **control over PATH can become control over execution.**
 This enables PATH hijacking: if an attacker places a malicious executable in a directory that appears earlier in PATH, it can be executed instead of the legitimate binary.
-
+nm
 ## Key Takeaway
 Windows trusts PATH order when resolving commands, making search order a critical factor in both system behavior and potential exploitation.
