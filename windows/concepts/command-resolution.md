@@ -66,8 +66,6 @@ Example output:
 
 ```.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC```
 
-How it works:
-
 For example, when running:
 
 ```sample```
