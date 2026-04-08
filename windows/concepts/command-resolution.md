@@ -8,7 +8,6 @@ This means execution depends not only on what files exist, but on where Windows 
 ## Tools Used
 
 - CMD
-- Regedit
 
 ## Environment
 
