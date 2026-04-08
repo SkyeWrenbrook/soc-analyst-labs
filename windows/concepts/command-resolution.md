@@ -67,8 +67,11 @@ Example output:
 ```.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC```
 
 How it works:
+
 When running:
+
 ```sample```
+
 Windows attempts:
 ```
 sample.com
