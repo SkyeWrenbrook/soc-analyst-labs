@@ -36,13 +36,7 @@ When a command is entered without a full path (e.g., ipconfig, backup, sample), 
 4. Directories listed in %PATH% (in order)
 
 Windows stops searching as soon as it finds the first matching executable. 
-
-This means that if a malicious executable exists earlier in the search path—such as in the current working directory—it will be executed instead of the legitimate one located later (e.g., in System32).
-
-This behavior creates a security risk known as %PATH% hijacking, where an attacker places a malicious executable in a location that is searched before the legitimate binary. 
-
-This is especially dangerous when users execute unqualified commands, since Windows relies entirely on its search order rather than an explicitly defined path. 
-
+This search is performed directory-by-directory, and within each directory, file extensions are evaluated in priority order.
 
 # Qualified vs Unqualified Commands
 
@@ -134,6 +128,16 @@ So now %PATH% should look something like this:
 
 ```C:\LabPath;C:\Windows\system32;C:\Windows;C:\Windows\System32\wbem;C:\Windows\System32\WindowsPowerShell\v1.0\;C:\Windows\System32\OpenSSH\;c:\Program files\Git\cmd;C:\Program Files\PowerShell\7\;C:\Users\htb-student\AppData\Local\Microsoft\WindowsApps;```
 
+## How Unqualified Commands are Introduced
+
+Unqualified commands often exist due to common system and development practices, not necessarily malicious intent.
+- Developer convenience
+  - Developers may use commands like backup.exe without a full path because it is faster and works in their environment.
+- Misconfiguration
+  - Scheduled tasks or services may be configured without full paths, unintentionally relying on PATH.
+- Installer behavior
+  - Some software registers executables and relies on PATH instead of using explicit file paths.
+  
 # Key Insight
 
 Windows uses a "first match wins" rule when resolving commands.
@@ -142,15 +146,20 @@ Because of this:
 
 - Execution depends on search order
 - The same command can produce different results depending on context
-- Changing directories or %PATH% can change which executable runs
-- Execution depends on both where a file is located and what type of executable it is. 
+- Both directory order and file type (extension) influence execution
 
-# Security Implication
+# Why This Matters (Security Perspective)
 
-Command resolution is based on where Windows looks, not just what exists.
+If a malicious executable exists earlier in the search path—such as in the current working directory—it will be executed instead of the legitimate one located later (e.g., in System32).
+
+This behavior creates a security risk known as %PATH% hijacking, where an attacker places a malicious executable in a location that is searched before the legitimate binary. 
+
+This is especially dangerous when users execute unqualified commands, since Windows relies entirely on its search order rather than an explicitly defined path. 
+
+Command resolution is based on where Windows looks, not just what files exist.
 
 This means:
-- A different executable may run than expected
+- A different executable may run than intended
 - Behavior can change depending on environment configuration
 - Systems that rely on unqualified commands may execute unintended binaries
 
@@ -160,6 +169,6 @@ Using fully qualified paths (e.g., C:\Windows\System32\ipconfig.exe) mitigates t
 
 # Final Takeaway
 
-Windows does not search arbitrarily—it follows a defined order, and that order determines execution. 
+Windows does not search arbitrarily—it follows a defined order, and that order determines which executable is run.
 
 Small changes in environment configuration can significantly alter system behavior, making command resolution a subtle but powerful attack surface. 
