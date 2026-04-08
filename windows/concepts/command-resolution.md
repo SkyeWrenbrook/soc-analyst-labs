@@ -68,7 +68,7 @@ Example output:
 
 How it works:
 
-When running:
+For example, when running:
 
 ```sample```
 
