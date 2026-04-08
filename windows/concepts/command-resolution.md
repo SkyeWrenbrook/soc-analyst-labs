@@ -24,9 +24,7 @@ You can inspect the current %PATH% using:
 
 Example output:
 
-```C:\Windows\System32;C:\Windows;C:\Windows\System32\wbem;...```
-
-<img width="985" height="72" alt="path-cmd" src="https://github.com/user-attachments/assets/bef4651b-d2be-4e14-b668-104611919e5f" />
+```C:\Windows\System32;C:\Windows;C:\Windows\System32\wbem;C:\Windows\System32\WindowsPowerShell\v1.0\;C:\Windows\System32\OpenSSH\;c:\Program files\Git\cmd;C:\Program Files\PowerShell\7\;C:\Users\htb-student\AppData\Local\Microsoft\WindowsApps;```
 
 Each directory is separated by a semicolon (;) and is searched in order from left to right.
 
