@@ -37,7 +37,7 @@ When a command is entered without a full path (e.g., ipconfig, backup, sample), 
 
 Windows stops searching as soon as it finds the first matching executable. 
 
-This means that if a malicious executable exists earlier in the search path--such as in the current working directory--it will be executed instead of the legitimate one located later (e.g., in System32).
+This means that if a malicious executable exists earlier in the search path—such as in the current working directory—it will be executed instead of the legitimate one located later (e.g., in System32).
 
 This behavior creates a security risk known as %PATH% hijacking, where an attacker places a malicious executable in a location that is searched before the legitimate binary. 
 
@@ -107,6 +107,6 @@ Using fully qualified paths (e.g., C:\Windows\System32\ipconfig.exe) mitigates t
 
 # Final Takeaway
 
-Windows does not search arbitrarily--it follows a defined order, and that order determines execution. 
+Windows does not search arbitrarily—it follows a defined order, and that order determines execution. 
 
 Small changes in environment configuration can significantly alter system behavior, making command resolution a subtle but powerful attack surface. 
