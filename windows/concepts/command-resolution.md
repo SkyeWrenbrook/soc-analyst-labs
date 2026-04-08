@@ -11,7 +11,7 @@ This means execution depends not only on what files exist, but on where Windows 
 
 ## Environment
 
--Windows Environment
+- Windows Environment
 
 # Viewing %PATH%
 
