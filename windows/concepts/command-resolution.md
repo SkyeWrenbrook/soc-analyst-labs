@@ -68,6 +68,10 @@ If multiple directories in %PATH% contain the same executable name, the first ma
 
 This prepends a user-controlled directory to the beginning of %PATH%, causing Windows to search it before other %PATH% entries. 
 
+So now %PATH% should look something like this:
+
+```C:\LabPath;C:\Windows\system32;C:\Windows;C:\Windows\System32\wbem;C:\Windows\System32\WindowsPowerShell\v1.0\;C:\Windows\System32\OpenSSH\;c:\Program files\Git\cmd;C:\Program Files\PowerShell\7\;C:\Users\htb-student\AppData\Local\Microsoft\WindowsApps;```
+
 # Key Insight
 
 Windows uses a "first match wins" rule when resolving commands.
