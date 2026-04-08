@@ -1,9 +1,12 @@
 ## Overview
 
-When a command is executed without a full path, Windows must determine which executable to run.
-Rather than searching the entire system, Windows follows a defined search order. 
+Windows resolves commands by searching for executable files based on a defined order. 
+When a command is entered without a full path (e.g., ipconfig, backup, sample), Windows determines which file to execute using a combination of:
 
-This means execution depends not only on what files exist, but on where Windows is configured to look. 
+- Current working directory
+- System directories
+- The %PATH% environment variable
+- File extension priority (%PATHEXT%)
 
 ## Tools Used
 
@@ -29,7 +32,7 @@ Each directory is separated by a semicolon (;) and is searched in order from lef
 
 # Command Resolution Order
 
-When a command is entered without a full path (e.g., ipconfig, backup, sample), Windows searches in the following order: 
+When a command is entered without a full path (e.g., ipconfig, backup, sample), Windows follows this order:
 1. Current working Directory
 2. C:\Windows\System32
 3. C:\Windows
@@ -42,6 +45,7 @@ This means that if a malicious executable exists earlier in the search path—su
 This behavior creates a security risk known as %PATH% hijacking, where an attacker places a malicious executable in a location that is searched before the legitimate binary. 
 
 This is especially dangerous when users execute unqualified commands, since Windows relies entirely on its search order rather than an explicitly defined path. 
+
 
 # Qualified vs Unqualified Commands
 
@@ -59,6 +63,49 @@ Qualified Command:
 
 A qualified command bypasses the %PATH% search process entirely, preventing attackers from hijacking execution through search order manipulation. 
 
+# Extension Resolution (PATHEXT)
+
+When a command is entered without an extension (e.g., sample), Windows determines which file type to execute using %PATHEXT%.
+
+You can view %PATHEXT%:
+
+```echo %PATHEXT%```
+
+Example output:
+
+```.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC```
+
+How it works:
+When running:
+```sample```
+Windows attempts:
+```
+sample.com
+sample.exe
+sample.bat
+sample.cmd
+```
+
+The first match found is executed.
+Example:
+
+If a directory contains:
+
+```
+sample.exe
+sample.bat
+sample.cmd
+```
+
+Running:
+```sample```
+
+will execute:
+
+```sample.exe```
+
+becaue .EXE has higher priority
+
 # How %PATH% Influences Execution
 
 %PATH% affects command resolution only after the current directory and system directories have been checked. 
@@ -69,6 +116,14 @@ This means:
 - But it is only consulted after Windows checks the current working directory and system directories.
 
 If multiple directories in %PATH% contain the same executable name, the first match (from left to right) is used.
+
+# Interaction Between %PATH% and %PATHEXT%
+
+Command resolution follows this combined process:
+
+1. Search directories in order
+2. Within each directory, check extensions in %PATHEXT% order
+3. Execute the first match found
 
 # Modifying %PATH% (Session Example)
 
@@ -91,6 +146,7 @@ Because of this:
 - Execution depends on search order
 - The same command can produce different results depending on context
 - Changing directories or %PATH% can change which executable runs
+- Execution depends on both where a file is located and what type of executable it is. 
 
 # Security Implication
 
