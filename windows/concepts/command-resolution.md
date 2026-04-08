@@ -39,6 +39,10 @@ Windows stops searching as soon as it finds the first matching executable.
 
 This means that if a malicious executable exists earlier in the search path--such as in the current working directory--it will be executed instead of the legitimate one located later (e.g., in System32).
 
+This behavior creates a security risk known as %PATH% hijacking, where an attacker places a malicious executable in a location that is searched before the legitimate binary. 
+
+This is especially dangerous when users execute unqualified commands, since Windows relies entirely on its search order rather than an explicitly defined path. 
+
 # Qualified vs Unqualified Commands
 
 Unqualified Command:
@@ -48,6 +52,12 @@ Unqualified Command:
 Windows searches according to the resolution order.
 
 Unqualified commands rely on this search process, while qualified commands bypass it entirely.
+
+Qualified Command:
+
+```C:\Windows\System32\ipconfig.exe```
+
+A qualified command bypasses the %PATH% search process entirely, preventing attackers from hijacking execution through search order manipulation. 
 
 # How %PATH% Influences Execution
 
