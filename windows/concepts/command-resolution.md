@@ -8,13 +8,10 @@ When a command is entered without a full path (e.g., ipconfig, backup, sample), 
 - The %PATH% environment variable
 - File extension priority (%PATHEXT%)
 
-## Tools Used
+## Tools and Environment
 
-- CMD
-
-## Environment
-
-- Windows Environment
+- Windows Command Prompt (CMD)
+- Built-in commands: echo, where, cd
 
 # Viewing %PATH%
 
