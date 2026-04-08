@@ -15,7 +15,7 @@ This means execution depends not only on what files exist, but on where Windows 
 
 # Viewing %PATH%
 
-The %PATH% environment variable contains a lsit of directories that Windows searches when resolving commands.
+The %PATH% environment variable contains a list of directories that Windows searches to locate executables when a command is run without a full path.
 
 You can inspect the current %PATH% using:
 
@@ -35,7 +35,9 @@ When a command is entered without a full path (e.g., ipconfig, backup, sample), 
 3. C:\Windows
 4. Directories listed in %PATH% (in order)
 
-Windows stops searching as soon as it finds the first match. 
+Windows stops searching as soon as it finds the first matching executable. 
+
+This means that if a malicious executable exists earlier in the search path--such as in the current working directory--it will be executed instead of the legitimate one located later (e.g., in System32).
 
 # Qualified vs Unqualified Commands
 
@@ -43,7 +45,7 @@ Unqualified Command:
 
 ```ipconfig```
 
-Windows searches according to the resolution order
+Windows searches according to the resolution order.
 
 Unqualified commands rely on this search process, while qualified commands bypass it entirely.
 
@@ -89,9 +91,3 @@ This means:
 
 Windows does not search everywhere, it follows a defined order.
 Understanding that order is key to understanding how commands are executed. 
-
-
-
-
-## Key Takeaway
-Windows trusts PATH order when resolving commands, making search order a critical factor in both system behavior and potential exploitation.
