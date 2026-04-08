@@ -66,7 +66,7 @@ A qualified command bypasses the %PATH% search process entirely, preventing atta
 This means:
 
 - %PATH% can influence which executable is run
-- But it does not override system directories or the current working directory
+- But it is only consulted after Windows checks the current working directory and system directories.
 
 If multiple directories in %PATH% contain the same executable name, the first match (from left to right) is used.
 
@@ -101,7 +101,12 @@ This means:
 - Behavior can change depending on environment configuration
 - Systems that rely on unqualified commands may execute unintended binaries
 
+If an attacker can control a directory that appears earlier in the search order (such as the current working directory or a prepended %PATH% entry), they can cause a malcious executable to run instead of the intended one.
+
+Using fully qualified paths (e.g., C:\Windows\System32\ipconfig.exe) mitigates this risk by eliminating the search process entirely.
+
 # Final Takeaway
 
-Windows does not search everywhere, it follows a defined order.
-Understanding that order is key to understanding how commands are executed. 
+Windows does not search arbitrarily--it follows a defined order, and that order determines execution. 
+
+Small changes in environment configuration can significantly alter system behavior, making command resolution a subtle but powerful attack surface. 
