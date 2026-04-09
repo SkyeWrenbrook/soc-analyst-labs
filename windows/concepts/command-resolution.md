@@ -32,7 +32,6 @@ Each directory is separated by a semicolon (;) and is searched in order from lef
 When a command is entered without a full path (e.g., ipconfig, backup, sample), Windows follows this order:
 1. Current working Directory
 2. C:\Windows\System32
-3. C:\Windows
 4. Directories listed in %PATH% (in order)
 
 Windows stops searching as soon as it finds the first matching executable. 
