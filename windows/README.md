@@ -1,4 +1,4 @@
-## Windows Fundamentals
+# Windows Fundamentals
 
 This section documents my study of Windows fundamentals with a focus on concepts relevant to SOC analysis and system security.
 
