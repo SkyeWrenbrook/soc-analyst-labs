@@ -19,8 +19,8 @@ The goal is to understand search order, %PATH%, %PATHEXT%, and why command resol
 
 # Key Concepts
 
-- Qualified command: full path provided (eg. C:\Windows\System32\ipconfig.exe)
-- Unqualified command: command entered without full path (eg. ipconfig)
+- Qualified command: full path provided
+- Unqualified command: command entered without full path
 - %PATH%: directories Windows searches
 - %PATHEXT%: executable extension priority list
 
