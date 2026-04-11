@@ -122,12 +122,13 @@ C:\Windows\System32\ipconfig.exe
 
 Key Finding #2 — %PATH% Behavior
 
-    Even after modififying %PATH%, execution still respects the search order
+    Even after modififying %PATH%, execution still follows overall search order precedence (current directory → system locations → user directories)
     
-    Current directory
+        Current directory
     
-    Directories in %PATH% (in order), including system directories first, then user-added ones. 
-    If you prepend, user-added directories come first, followed by system directories. 
+        Directories in %PATH% (in order), including system directories first, then user-added ones. 
+        
+        If you prepend, user-added directories come first, followed by system directories. 
     
 Step 7: Bypass hijack (fully qualified path)
 
