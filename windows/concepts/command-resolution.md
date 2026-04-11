@@ -29,10 +29,7 @@ The goal is to understand search order, %PATH%, %PATHEXT%, and why command resol
 1. View %PATH%
    - Command: ```echo %PATH%```
    - Output: ```C:\Windows\System32;C:\Windows;C:\Windows\System32\wbem;C:\Windows\System32\WindowsPowerShell\v1.0\;C:\Windows\System32\OpenSSH\;c:\Program files\Git\cmd;C:\Program Files\PowerShell\7\;C:\Users\htb-student\AppData\Local\Microsoft\WindowsApps;```
-   - Interpretation:
-     
-     The %PATH% environment variable contains a list of directories that Windows searches to locate executables when a command is run without a full path.
-     Each directory is separated by a semicolon (;) and is searched in order from left to right.
+   - Interpretation: The %PATH% environment variable contains a list of directories that Windows searches to locate executables when a command is run without a full path. Each directory is separated by a semicolon (;) and is searched in order from left to right.
 
 2. Observe command resolution order
 
@@ -60,8 +57,7 @@ The goal is to understand search order, %PATH%, %PATHEXT%, and why command resol
    
       - Output: ```.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC```
 
-      - Interpretation
-            When a command is entered without an extension (e.g., sample), Windows determines which file type to execute using %PATHEXT%.
+      - Interpretation: When a command is entered without an extension (e.g., sample), Windows determines which file type to execute using %PATHEXT%.
 
 8. Test extension resolution
    Example:
