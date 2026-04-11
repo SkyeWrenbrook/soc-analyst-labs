@@ -45,8 +45,8 @@ The goal is to understand search order, %PATH%, %PATHEXT%, and why command resol
     - System directories
     - Directories listed in %PATH% (in order)
 
-Windows stops searching as soon as it finds the first matching executable. 
-This search is performed directory-by-directory, and within each directory, file extensions are evaluated in priority order.
+   Windows stops searching as soon as it finds the first matching executable. 
+   This search is performed directory-by-directory, and within each directory, file extensions are evaluated in priority order.
 
 4. Compare qualified vs unqualified commands
 
