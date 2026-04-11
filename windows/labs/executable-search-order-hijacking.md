@@ -179,13 +179,13 @@ A malicious ping.exe in that directory will execute instead of the legitimate bi
 
 # Mitigation
 
-    Avoid running commands in untrusted directories
+- Avoid running commands in untrusted directories
 
-    Use fully qualified paths for critical operations
+- Use fully qualified paths for critical operations
 
-    Restrict write access to %PATH% directories
+- Restrict write access to %PATH% directories
 
-    Monitor working directory context in scripts
+- Monitor working directory context in scripts
 
 # Detection Perspective (SOC)
 
@@ -219,8 +219,8 @@ Multiple matches may indicate hijack potential
 
 # Key Takeaways
 
-    Windows checks the current directory before %PATH%
+- Windows checks the current directory before %PATH%
 
-    Working directory can override %PATH% expectations
+- Working directory can override %PATH% expectations
 
-    Fully qualified paths bypass search order entirely
+- Fully qualified paths bypass search order entirely
