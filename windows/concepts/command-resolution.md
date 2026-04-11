@@ -78,7 +78,7 @@ The goal is to understand search order, %PATH%, %PATHEXT%, and why command resol
 
     So now %PATH% should look something like this:
 
-    ```C:\LabPath;C:\Windows\system32;C:\Windows;C:\Windows\System32\wbem;C:\Windows\System32\WindowsPowerShell\v1.0\;C:\Windows\System32\OpenSSH\;c:\Program files\Git\cmd;C:\Program Files\PowerShell\7\;C:        \Users\htb-student\AppData\Local\Microsoft\WindowsApps;```
+    ```C:\LabPath;C:\Windows\system32;C:\Windows;C:\Windows\System32\wbem;C:\Windows\System32\WindowsPowerShell\v1.0\;C:\Windows\System32\OpenSSH\;c:\Program files\Git\cmd;C:\Program Files\PowerShell\7\;C:\Users\htb-student\AppData\Local\Microsoft\WindowsApps;```
 
 # Observations
 
