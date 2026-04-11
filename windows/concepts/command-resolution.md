@@ -68,10 +68,7 @@ The goal is to understand search order, %PATH%, %PATHEXT%, and why command resol
         sample.cmd
         ```
 
-   Running: ```sample```
-   Will execute: ```sample.exe```
-
-   because .EXE has higher priority
+   Running: ```sample``` will execute: ```sample.exe```because .EXE has higher priority
 
 7. Modify %PATH% in session
    
