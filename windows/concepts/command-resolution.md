@@ -59,15 +59,15 @@ The goal is to understand search order, %PATH%, %PATHEXT%, and why command resol
 6. View %PATHEXT%
 
    When a command is entered without an extension (e.g., sample), Windows determines which file type to execute using %PATHEXT%.
-        - Command
-            ```echo %PATHEXT%```
-        - Output
-        
-            ```.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC```
-        - Interpretation
+   
+      - Command: ```echo %PATHEXT%```
+   
+      - Output: ```.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC```
+
+      - Interpretation
             When a command is entered without an extension (e.g., sample), Windows determines which file type to execute using %PATHEXT%.
 
-7. Test extension resolution
+8. Test extension resolution
    Example:
    If a directory contains three files with different extensions:
 
