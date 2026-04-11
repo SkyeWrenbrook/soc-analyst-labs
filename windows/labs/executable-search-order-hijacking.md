@@ -93,8 +93,7 @@ Observation:
 
     User %PATH% is appended after system %PATH%
 
-<img width="600" height="200" alt="path-structure" src="https://github.com/user-attachments/assets/bb758ba4-5287-497e-bb5e-13ae3578d18b" />
-
+<img width="959" height="53" alt="path-structure" src="https://github.com/user-attachments/assets/25692581-e519-4348-bb7b-f1789eadea75" />
 
 Step 5: Attempt %PATH% manipulation
 
