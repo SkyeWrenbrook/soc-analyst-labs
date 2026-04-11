@@ -30,6 +30,7 @@ echo @echo OFF > ipconfig.bat
 echo echo FAKE IPCONFIG EXECUTED >> ipconfig.bat
 pause
 ```
+
 Rename:
 
 ```ren ipconfig.bat ipconfig.exe```
@@ -128,7 +129,6 @@ Key Finding #2 — %PATH% Behavior
     Directories in %PATH% (in order), including system directories first, then user-added ones. 
     If you prepend, user-added directories come first, followed by system directories. 
     
-
 Step 7: Bypass hijack (fully qualified path)
 
 ```C:\Windows\System32\ipconfig.exe```
