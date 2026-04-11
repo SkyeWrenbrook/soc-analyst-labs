@@ -27,12 +27,8 @@ The goal is to understand search order, %PATH%, %PATHEXT%, and why command resol
 # Steps Taken
 
 1. View %PATH%
-   - Command:
-     
-     ```echo %PATH%```
-   - Output:
-     
-     ```C:\Windows\System32;C:\Windows;C:\Windows\System32\wbem;C:\Windows\System32\WindowsPowerShell\v1.0\;C:\Windows\System32\OpenSSH\;c:\Program files\Git\cmd;C:\Program Files\PowerShell\7\;C:\Users\htb-         student\AppData\Local\Microsoft\WindowsApps;```
+   - Command: ```echo %PATH%```
+   - Output: ```C:\Windows\System32;C:\Windows;C:\Windows\System32\wbem;C:\Windows\System32\WindowsPowerShell\v1.0\;C:\Windows\System32\OpenSSH\;c:\Program files\Git\cmd;C:\Program Files\PowerShell\7\;C:                  \Users\htb-student\AppData\Local\Microsoft\WindowsApps;```
    - Interpretation:
      
      The %PATH% environment variable contains a list of directories that Windows searches to locate executables when a command is run without a full path.
