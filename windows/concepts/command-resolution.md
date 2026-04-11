@@ -50,13 +50,9 @@ The goal is to understand search order, %PATH%, %PATHEXT%, and why command resol
 
 4. Compare qualified vs unqualified commands
 
-   Unqualified command: 
-
-   ```ipconfig```
+   Unqualified command:  ```ipconfig```
    
-   Qualified command: 
-
-   ```C:\Windows\System32\ipconfig.exe```
+   Qualified command: ```C:\Windows\System32\ipconfig.exe```
 
    Unqualified commands rely on resolution order, while qualified commands bypass it entirely.
 
