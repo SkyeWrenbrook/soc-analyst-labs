@@ -5,12 +5,13 @@
 Demonstrate how Windows executes a malicious executable when it appears earlier in the executable search order, and distinguish between:
 
     - Current Directory Hijacking
-
+    
     - %PATH%-based Hijacking
 
 # Tools and Environment
 
     - Command Prompt (CMD)
+    
     - Windows OS (user-level access)
 
 # Steps
@@ -27,7 +28,9 @@ cd C:\LabPath
 
 ```
 echo @echo OFF > ipconfig.bat
+
 echo echo FAKE IPCONFIG EXECUTED >> ipconfig.bat
+
 pause
 ```
 
@@ -47,6 +50,7 @@ Expected:
 
 ```
 C:\LabPath\ipconfig.exe
+
 C:\Windows\System32\ipconfig.exe
 ```
 
@@ -117,6 +121,7 @@ Expected:
 
 ```
 C:\LabPath\ipconfig.exe
+
 C:\Windows\System32\ipconfig.exe
 ```
 
