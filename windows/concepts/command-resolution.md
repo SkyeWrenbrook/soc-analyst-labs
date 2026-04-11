@@ -1,4 +1,4 @@
-## Overview
+# Overview
 
 Windows resolves commands by searching for executable files based on a defined order. 
 When a command is entered without a full path (e.g., ipconfig, backup, sample), Windows determines which file to execute using a combination of:
@@ -8,12 +8,16 @@ When a command is entered without a full path (e.g., ipconfig, backup, sample), 
 - The %PATH% environment variable
 - File extension priority (%PATHEXT%)
 
-## Tools and Environment
+# Objective
+
+# Tools and Environment
 
 - Windows Command Prompt (CMD)
 - Built-in commands: echo, where, cd
 
-# Viewing %PATH%
+# Steps Taken
+
+1. Viewing %PATH%
 
 The %PATH% environment variable contains a list of directories that Windows searches to locate executables when a command is run without a full path.
 
@@ -27,17 +31,17 @@ Example output:
 
 Each directory is separated by a semicolon (;) and is searched in order from left to right.
 
-# Command Resolution Order
+2. Command Resolution Order
 
 When a command is entered without a full path (e.g., ipconfig, backup, sample), Windows follows this order:
-1. Current working Directory
-2. C:\Windows\System32
-4. Directories listed in %PATH% (in order)
+    - Current working Directory
+    - C:\Windows\System32
+    - Directories listed in %PATH% (in order)
 
 Windows stops searching as soon as it finds the first matching executable. 
 This search is performed directory-by-directory, and within each directory, file extensions are evaluated in priority order.
 
-# Qualified vs Unqualified Commands
+3. Qualified vs Unqualified Commands
 
 Unqualified Command:
 
@@ -53,7 +57,7 @@ Qualified Command:
 
 A qualified command bypasses the %PATH% search process entirely, preventing attackers from hijacking execution through search order manipulation. 
 
-# Extension Resolution (PATHEXT)
+4. Extension Resolution (PATHEXT)
 
 When a command is entered without an extension (e.g., sample), Windows determines which file type to execute using %PATHEXT%.
 
@@ -97,7 +101,7 @@ will execute:
 
 becaue .EXE has higher priority
 
-# How %PATH% Influences Execution
+5. How %PATH% Influences Execution
 
 %PATH% affects command resolution only after the current directory and system directories have been checked. 
 
@@ -108,7 +112,7 @@ This means:
 
 If multiple directories in %PATH% contain the same executable name, the first match (from left to right) is used.
 
-# Interaction Between %PATH% and %PATHEXT%
+6. Interaction Between %PATH% and %PATHEXT%
 
 Command resolution follows this combined process:
 
@@ -116,7 +120,7 @@ Command resolution follows this combined process:
 2. Within each directory, check extensions in %PATHEXT% order
 3. Execute the first match found
 
-# Modifying %PATH% (Session Example)
+7. Modifying %PATH% (Session Example)
 
 %PATH% can be modified within a session:
 
@@ -128,7 +132,7 @@ So now %PATH% should look something like this:
 
 ```C:\LabPath;C:\Windows\system32;C:\Windows;C:\Windows\System32\wbem;C:\Windows\System32\WindowsPowerShell\v1.0\;C:\Windows\System32\OpenSSH\;c:\Program files\Git\cmd;C:\Program Files\PowerShell\7\;C:\Users\htb-student\AppData\Local\Microsoft\WindowsApps;```
 
-## How Unqualified Commands are Introduced
+8. How Unqualified Commands are Introduced
 
 Unqualified commands often exist due to common system and development practices, not necessarily malicious intent.
 - Developer convenience
@@ -138,7 +142,7 @@ Unqualified commands often exist due to common system and development practices,
 - Installer behavior
   - Some software registers executables and relies on PATH instead of using explicit file paths.
   
-# Key Insight
+# Key Findings
 
 Windows uses a "first match wins" rule when resolving commands.
 
@@ -147,8 +151,6 @@ Because of this:
 - Execution depends on search order
 - The same command can produce different results depending on context
 - Both directory order and file type (extension) influence execution
-
-# Why This Matters (Security Perspective)
 
 If a malicious executable exists earlier in the search path—such as in the current working directory—it will be executed instead of the legitimate one located later (e.g., in System32).
 
@@ -166,8 +168,6 @@ This means:
 If an attacker can control a directory that appears earlier in the search order (such as the current working directory or a prepended %PATH% entry), they can cause a malcious executable to run instead of the intended one.
 
 Using fully qualified paths (e.g., C:\Windows\System32\ipconfig.exe) mitigates this risk by eliminating the search process entirely.
-
-# Final Takeaway
 
 Windows does not search arbitrarily—it follows a defined order, and that order determines which executable is run.
 
