@@ -9,15 +9,6 @@ The goal is to understand search order, %PATH%, %PATHEXT%, and why command resol
 - Understand the role of %PATH% and %PATHEXT%
 - Compare qualified and unqualified commands
 - Explain how search order can create security risk
-  //
-Windows resolves commands by searching for executable files based on a defined order. 
-When a command is entered without a full path (e.g., ipconfig, backup, sample), Windows determines which file to execute using a combination of:
-
-- Current working directory
-- System directories
-- The %PATH% environment variable
-- File extension priority (%PATHEXT%)
-//
 
 
 # Tools and Environment
