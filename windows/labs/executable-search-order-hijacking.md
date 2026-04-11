@@ -106,7 +106,8 @@ Verify:
 
 Result:
 
-<img width="600" height="200" alt="path-prepended" src="https://github.com/user-attachments/assets/084a8581-6873-4864-af01-b77396797ecb" />
+<img width="959" height="49" alt="path-prepended" src="https://github.com/user-attachments/assets/3b5b9efe-8ba3-4bd0-93b6-f4d8051f0866" />
+
 
 Step 6: Check resolution order
 
