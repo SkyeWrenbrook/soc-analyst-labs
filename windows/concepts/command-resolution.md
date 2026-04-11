@@ -60,7 +60,6 @@ The goal is to understand search order, %PATH%, %PATHEXT%, and why command resol
       - Interpretation: When a command is entered without an extension (e.g., sample), Windows determines which file type to execute using %PATHEXT%.
 
 8. Test extension resolution
-   Example:
    If a directory contains three files with different extensions:
 
         ```
@@ -69,12 +68,10 @@ The goal is to understand search order, %PATH%, %PATHEXT%, and why command resol
         sample.cmd
         ```
 
-   Running:
-       ```sample```
-   will execute:
-        ```sample.exe```
+   Running: ```sample```
+   Will execute: ```sample.exe```
 
-because .EXE has higher priority
+   because .EXE has higher priority
 
 7. Modify %PATH% in session
    
