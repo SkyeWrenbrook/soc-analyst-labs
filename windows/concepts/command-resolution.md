@@ -27,12 +27,14 @@ The goal is to understand search order, %PATH%, %PATHEXT%, and why command resol
 # Steps Taken
 
 1. View %PATH%
-   - Command
+   - Command:
+     
      ```echo %PATH%```
-   - Output
+   - Output:
      
      ```C:\Windows\System32;C:\Windows;C:\Windows\System32\wbem;C:\Windows\System32\WindowsPowerShell\v1.0\;C:\Windows\System32\OpenSSH\;c:\Program files\Git\cmd;C:\Program Files\PowerShell\7\;C:\Users\htb-         student\AppData\Local\Microsoft\WindowsApps;```
-   - Interpretation
+   - Interpretation:
+     
      The %PATH% environment variable contains a list of directories that Windows searches to locate executables when a command is run without a full path.
      Each directory is separated by a semicolon (;) and is searched in order from left to right.
 
@@ -48,8 +50,12 @@ This search is performed directory-by-directory, and within each directory, file
 
 4. Compare qualified vs unqualified commands
 
-Unqualified command: ```ipconfig```
-Qualified command: ```C:\Windows\System32\ipconfig.exe```
+Unqualified command: 
+
+```ipconfig```
+Qualified command: 
+
+```C:\Windows\System32\ipconfig.exe```
 
 Unqualified commands rely on resolution order, while qualified commands bypass it entirely.
 
@@ -59,6 +65,7 @@ When a command is entered without an extension (e.g., sample), Windows determine
         - Command
             ```echo %PATHEXT%```
         - Output
+        
             ```.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC```
         - Interpretation
             When a command is entered without an extension (e.g., sample), Windows determines which file type to execute using %PATHEXT%.
