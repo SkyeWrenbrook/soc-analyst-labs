@@ -6,7 +6,7 @@ Demonstrate how Windows executes a malicious executable when it appears earlier 
 
     - Current Directory Hijacking
 
-    - PATH-based Hijacking
+    - %PATH%-based Hijacking
 
 # Tools and Environment
 
