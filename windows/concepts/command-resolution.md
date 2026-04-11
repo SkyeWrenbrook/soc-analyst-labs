@@ -96,7 +96,7 @@ Unqualified commands often exist due to common system and development practices,
 - Installer behavior
   - Some software registers executables and relies on PATH instead of using explicit file paths
 
-- A malicious binary blaced earlier int he search order maye xecute first
+- A malicious binary placed earlier in the search order may execute first
 - Using fully qualified paths reduces the risk of search order abuse
 
 # Key Findings
@@ -104,5 +104,5 @@ Unqualified commands often exist due to common system and development practices,
 - Command resolution depends on both directory order and extension priority
 - %PATH% influences execution only after earlier checks
 - %PATHEXT% determines which file type runs first within a directory
-- %Fully qualified paths are more predictable and secure
+- Fully qualified paths are more predictable and secure
 
