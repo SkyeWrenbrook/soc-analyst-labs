@@ -50,18 +50,18 @@ The goal is to understand search order, %PATH%, %PATHEXT%, and why command resol
 
 4. Compare qualified vs unqualified commands
 
-Unqualified command: 
+   Unqualified command: 
 
-```ipconfig```
-Qualified command: 
+   ```ipconfig```
+   Qualified command: 
 
-```C:\Windows\System32\ipconfig.exe```
+   ```C:\Windows\System32\ipconfig.exe```
 
-Unqualified commands rely on resolution order, while qualified commands bypass it entirely.
+   Unqualified commands rely on resolution order, while qualified commands bypass it entirely.
 
 5. View %PATHEXT%
 
-When a command is entered without an extension (e.g., sample), Windows determines which file type to execute using %PATHEXT%.
+   When a command is entered without an extension (e.g., sample), Windows determines which file type to execute using %PATHEXT%.
         - Command
             ```echo %PATHEXT%```
         - Output
@@ -71,8 +71,8 @@ When a command is entered without an extension (e.g., sample), Windows determine
             When a command is entered without an extension (e.g., sample), Windows determines which file type to execute using %PATHEXT%.
 
 6. Test extension resolution
-    Example:
-If a directory contains three files with different extensions:
+   Example:
+   If a directory contains three files with different extensions:
 
         ```
         sample.exe
