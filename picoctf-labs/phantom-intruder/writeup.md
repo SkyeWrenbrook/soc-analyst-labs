@@ -45,10 +45,6 @@ Then I decoded them in CyberChef using **From Base64** and got the flag.
 
 ---
 
-## Recovered Flag
-
----
-
 ## Takeaways
 Practiced traffic filtering, payload inspection, and Base64 extraction in Wireshark. Also noted repeated SYN retransmissions consistent with SYN flood-like traffic — not needed to solve the challenge, but a useful observation for understanding abnormal TCP patterns.
 
