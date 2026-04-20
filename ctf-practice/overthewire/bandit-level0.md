@@ -1,4 +1,4 @@
-# overthewire-labs-bandit0  
+# bandit level 0 
 
 ## Overview
 Practice Unix/Linux basics.
