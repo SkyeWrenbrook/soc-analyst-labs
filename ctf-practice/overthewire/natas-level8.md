@@ -1,4 +1,4 @@
-# overthewire-labs-natas8
+# Natas Level 8
 
 ## Overview
 
