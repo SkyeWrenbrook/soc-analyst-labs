@@ -1,7 +1,7 @@
 # overthewire-labs-bandit0  
 
 ## Overview
-Practice Unix/Linux basics. The password is found in a file called readme in the home directory
+Practice Unix/Linux basics.
 ## Tools Used
 - Linux commands: ls, cd, cat, file, du, find
 - VirtualBox
@@ -19,12 +19,9 @@ ssh bandit0@bandit.labs.overthewire.org -p 2220
 
 ### 2. Locate the password
 
-Find the password in the file called readme in the homedirectory by executing the command ls to confirm the file is in the current working directory, and the following command:
-
 ```
 cat readme
 ```
-to display the file's contents.
 
 ## Takeaways
 
