@@ -49,10 +49,6 @@ Then I decoded them in CyberChef using **From Base64**.
 
 ## Recovered Flag
 
-<img width="800" height="800" alt="challenge-flag-recovered png" src="https://github.com/user-attachments/assets/a2a5b171-2acf-4860-903d-b02c202ef503" />
-
-
-
 ---
 
 ## Takeaways
