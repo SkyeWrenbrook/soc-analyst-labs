@@ -1,4 +1,4 @@
-# PicoCTF — Ph4nt0m-1ntrud3r (Phantom Intruder) Write-Up
+# Ph4nt0m-1ntrud3r (Phantom Intruder)
 
 ## Overview
 A network traffic capture (PCAP) was provided. The goal was to analyze it in Wireshark, find encoded data in the packet payloads, and recover the flag.
