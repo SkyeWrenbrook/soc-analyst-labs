@@ -8,6 +8,7 @@ Querying remote hosts allows analysts to:
 - identify services that should not be running
 - detect unauthorized or suspicious services
 - validate system configurations across multiple machines
+
 From a blue team perspective, this is useful because malicious services can be used for persistence or unauthorized execution.
 
 # Example
