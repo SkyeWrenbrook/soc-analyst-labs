@@ -24,7 +24,7 @@ These repeated failures generate security events that can be analyzed to detect 
 ---
 
 ## Detection Logic
-If a source IP generates **≥5 failed login attempts within 15 minutes**, flag it as suspicious.
+If a source IP generates **≥5 failed authentication attempts within a defined time window (e.g., 15 minutes)**, flag it as suspicious.
 
 This threshold is based on observed behavior during testing.
 
@@ -40,6 +40,8 @@ This threshold is based on observed behavior during testing.
 - **Source Network Address:** 192.168.x.x (Kali VM)
 - **Logon Type:** 3 (Network logon)
 
+Logon Type 3 indicates a network-based authentication attempt. In RDP scenerios, Logon Type 10 may also be osberved depending on the authentication stage.
+
 ### Observed Pattern
 - 6 failed login attempts
 - Same source IP
@@ -49,10 +51,12 @@ This threshold is based on observed behavior during testing.
 
 | Time         | Event ID | Account | Source IP     | Logon Type |
 |--------------|----------|---------|---------------|------------|
-| 3:32:27 PM   | 4625     | user    | 192.168.x.x   | 3          |
-| 3:34:10 PM   | 4625     | user    | 192.168.x.x   | 3          |
-| 3:36:02 PM   | 4625     | user    | 192.168.x.x   | 3          |
-| ...          | ...      | ...     | ...           | ...        |
+| 3:32:27 PM   | 4625     | user    | 192.168.56.101   | 3          |
+| 3:32:26 PM   | 4625     | user    | 192.168.56.101   | 3          |
+| 3:32:25 PM   | 4625     | user    | 192.168.56.101   | 3          |
+| 3:32:23 PM   | 4625     | user    | 192.168.56.101   | 3          |
+| 3:32:20 PM   | 4625     | user    | 192.168.56.101   | 3          |
+| 3:32:13 PM   | 4625     | user    | 192.168.56.101   | 3          |
 
 ---
 
@@ -84,8 +88,5 @@ This investigation demonstrates how raw log data can be used to identify suspici
 
 ## Next Steps
 
-- Automate detection using SQL queries on structured log data
-- Expand detection to include:
-  - Successful login after multiple failures
-  - Multiple usernames targeted by a single IP
-- Integrate with SIEM tools for real-time alerting
+- Explore how similar patters appear across different authentication methods
+- Refine thresholds to distinguish between brute force and password spraying behavior
