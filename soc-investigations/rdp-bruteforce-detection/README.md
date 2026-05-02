@@ -32,6 +32,8 @@ This threshold is based on observed behavior during testing.
 
 ## Evidence
 
+<img width="634" height="302" alt="rdp-failed-login" src="https://github.com/user-attachments/assets/9acbc28a-9e72-4d8f-a754-367bac0b4266" />
+
 ### Key Event Details
 - **Event ID:** 4625 (Failed login)
 - **Account Name:** user
