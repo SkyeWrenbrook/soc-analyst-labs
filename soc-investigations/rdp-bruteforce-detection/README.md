@@ -3,7 +3,7 @@
 ## Overview
 This investigation simulates repeated failed Remote Desktop Protocol (RDP) login attempts from a Kali Linux VM to a Windows VM and analyzes Windows Security logs to identify brute-force behavior.
 
-The goal is to understand how authentication activity appears in logs and how repeated failures from a single source can indicate suspicious activity.
+The goal is to validate how repeated authentication failures are recorded in logs and whether they can be reliably measured against a defined threshold.
 
 ---
 
@@ -19,14 +19,15 @@ The goal is to understand how authentication activity appears in logs and how re
 ## Scenario
 A remote system attempts to authenticate to a Windows machine multiple times using incorrect credentials over RDP.
 
-These repeated failures generate security events that can be analyzed to detect potential brute-force activity.
+These repeated failures generate security events that can be analyzed to validate how authentication behavior is recorded and measured in logs.
 
 ---
 
-## Detection Logic
-If a source IP generates **≥5 failed authentication attempts within a defined time window (e.g., 15 minutes)**, flag it as suspicious.
+## Detection Hypothesis
 
-This threshold is based on observed behavior during testing.
+Hypothesis: Repeated failed authentication attempts from a single source IP should be observable and quantifiable within a defined time window. 
+
+This threshold (≥5 failed authentication attempts within 15 minutes) was used as a test condition to evaluate whether such patterns are clearly visible and traceable in Windows Security logs.
 
 ---
 
@@ -62,7 +63,7 @@ Logon Type 3 indicates a network-based authentication attempt. In RDP scenerios,
 
 ## Analysis
 
-The repeated failed login attempts from a single IP address within a short time window indicate a potential brute-force or password spraying attempt.
+This investigation validates that repeated failed authentication attempts from a single source IP are clearly observable in Windows Security logs and can be quantified over a defined time window.
 
 Key indicators:
 - Multiple authentication failures
