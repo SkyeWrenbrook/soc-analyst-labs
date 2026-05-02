@@ -1,19 +1,7 @@
-
 # Detecting Repeated RDP Authentication Failures in Windows Security Logs
 
 ## Overview
-### Sample Events
 
-| Time         | Event ID | Account | Source IP     | Logon Type |
-|--------------|----------|---------|---------------|------------|
-| 3:32:27 PM   | 4625     | user    | 192.168.56.101   | 3          |
-| 3:32:26 PM   | 4625     | user    | 192.168.56.101   | 3          |
-| 3:32:25 PM   | 4625     | user    | 192.168.56.101   | 3          |
-| 3:32:23 PM   | 4625     | user    | 192.168.56.101   | 3          |
-| 3:32:20 PM   | 4625     | user    | 192.168.56.101   | 3          |
-| 3:32:13 PM   | 4625     | user    | 192.168.56.101   | 3          |
-
----
 This investigation simulates repeated failed Remote Desktop Protocol (RDP) login attempts from a Kali Linux VM to a Windows VM and analyzes Windows Security logs.
 
 The goal is to validate how repeated authentication failures are recorded in logs and whether they can be reliably measured against a defined threshold.
@@ -61,6 +49,19 @@ If a source IP generates ≥5 failed authentication attempts within 15 minutes, 
 - 6 failed login attempts
 - Same source IP across all events
 - Occurred within approximately 15 minutes
+
+### Sample Events
+
+### Sample Events
+
+| Time         | Event ID | Account | Source IP     | Logon Type |
+|--------------|----------|---------|---------------|------------|
+| 3:32:27 PM   | 4625     | user    | 192.168.56.101   | 3          |
+| 3:32:26 PM   | 4625     | user    | 192.168.56.101   | 3          |
+| 3:32:25 PM   | 4625     | user    | 192.168.56.101   | 3          |
+| 3:32:23 PM   | 4625     | user    | 192.168.56.101   | 3          |
+| 3:32:20 PM   | 4625     | user    | 192.168.56.101   | 3          |
+| 3:32:13 PM   | 4625     | user    | 192.168.56.101   | 3          |
 
 ## Analysis
 
