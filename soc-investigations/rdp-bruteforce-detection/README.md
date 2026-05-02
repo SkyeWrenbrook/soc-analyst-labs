@@ -37,12 +37,14 @@ If a source IP generates ≥5 failed authentication attempts within 15 minutes, 
 
 ## Evidence
 
+<img width="634" height="302" alt="rdp-failed-login" src="https://github.com/user-attachments/assets/3e756c3b-fc97-428b-a250-701d65229c06" />
+
 ### Key Event Details
 
 - **Event ID:** 4625 (failed login)
 - **Account Name:** user
 - **Source Network Address:** 192.168.56.101 (Kali VM)
-- **Logon Type:** 3 (network-based authentication attempt)
+- **Logon Type:** 3 (network-based login attempt)
 
 ### Observed Pattern
 
@@ -65,7 +67,7 @@ If a source IP generates ≥5 failed authentication attempts within 15 minutes, 
 
 ## Analysis
 
-The test condition was met: multiple failed authentication attempts from a single source IP were clearly observable in the logs and could be grouped within the defined time window.
+The test condition was met: multiple failed login attempts from a single source IP were clearly observable in the logs and could be grouped within the defined time window.
 
 Key observations:
 
