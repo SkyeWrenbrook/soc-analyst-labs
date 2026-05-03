@@ -54,8 +54,6 @@ If a source IP generates ≥5 failed authentication attempts within 15 minutes, 
 
 ### Sample Events
 
-### Sample Events
-
 | Time         | Event ID | Account | Source IP     | Logon Type |
 |--------------|----------|---------|---------------|------------|
 | 3:32:27 PM   | 4625     | user    | 192.168.56.101   | 3          |
