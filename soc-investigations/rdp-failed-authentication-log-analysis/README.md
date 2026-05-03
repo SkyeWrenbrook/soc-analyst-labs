@@ -1,4 +1,4 @@
-# Detecting Repeated RDP Authentication Failures in Windows Security Logs
+# RDP Authentication Failure Analysis
 
 ## Overview
 
