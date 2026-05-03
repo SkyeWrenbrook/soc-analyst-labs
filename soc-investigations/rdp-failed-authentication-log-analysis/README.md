@@ -82,8 +82,6 @@ This validates that repeated authentication failures are both visible and measur
 
 This investigation confirms that repeated failed login attempts from a single source can be:
 
-- Clearly identified in Windows Security logs  
+- Clearly identified in Windows Security logs 
 - Grouped by source IP  
 - Measured against a defined threshold  
-
-These characteristics make it possible to build detection logic based on authentication patterns observed in raw log data.
