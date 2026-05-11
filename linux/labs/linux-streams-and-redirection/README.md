@@ -2,7 +2,7 @@
 
 ## Overview
 
-> This lab explores how Linux programs use stdin, stdout, stderr, redirection, and pipes.
+This project explores how Linux programs use stdin, stdout, stderr, redirection, and pipes. It was created as part of my Linux and SOC analyst learning journey.
 
 ---
 
@@ -31,6 +31,7 @@
 ```bash
 ls fakefile > out.txt 2> err.txt
 ```
+![Lab 1 Screenshot](screenshots/lab1-stream-separation.png)
 
 Result:
 - stdout was redirected to out.txt
@@ -45,16 +46,19 @@ Result:
 ls fakefile > both.txt 2>&1
 ```
 
+![Lab 2 Screenshot](screenshots/lab2-both-streams.png)
+
 Result:
 Both stdout and stderr were redirected into the same file.
 
-# Lab 3 - Using stdin
+# Lab 3 - Writing input to a file
 
 ## Command
 
 ```bash
 cat > notes.txt
 ```
+![Lab 3 Screenshot](screenshots/lab3-stdin.png)
 
 Result:
 Keyboard input was sent into notes.txt through stdin.
@@ -66,9 +70,10 @@ Keyboard input was sent into notes.txt through stdin.
 ```bash
 ls /etc | grep ssh
 ```
+![Lab 4 Screenshot](screenshots/lab4-pipes.png)
 
 Result:
-The stdout of ls became the stdin of grep.
+The stdout of `ls` became the stdin of grep.
 
 # Security Relevance
 
