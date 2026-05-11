@@ -72,9 +72,7 @@ ls /etc | grep ssh
 ```
 <img width="600" height="40" alt="lab4-pipes" src="https://github.com/user-attachments/assets/9fb5e7ba-dae8-48fe-b835-1c89a4f665ee" />
 
-Result:
-
-The stdout of `ls` became the stdin of `grep`.
+Result: The stdout of `ls` became the stdin of `grep`.
 
 # Security Relevance
 
