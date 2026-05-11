@@ -31,7 +31,8 @@ This project explores how Linux programs use stdin, stdout, stderr, redirection,
 ```bash
 ls fakefile > out.txt 2> err.txt
 ```
-![Lab 1 Screenshot](screenshots/lab1-stream-separation.png)
+<img width="600" height="118" alt="lab1-stream-separation" src="https://github.com/user-attachments/assets/05a0db8c-366c-4fba-ae2b-178184adb0ce" />
+
 
 Result:
 - stdout was redirected to out.txt
@@ -46,7 +47,8 @@ Result:
 ls fakefile > both.txt 2>&1
 ```
 
-![Lab 2 Screenshot](screenshots/lab2-both-streams.png)
+<img width="600" height="109" alt="lab2-both-streams" src="https://github.com/user-attachments/assets/b678626d-1a98-41a4-86a8-6f6c23cbdad4" />
+
 
 Result:
 Both stdout and stderr were redirected into the same file.
@@ -58,7 +60,9 @@ Both stdout and stderr were redirected into the same file.
 ```bash
 cat > notes.txt
 ```
-![Lab 3 Screenshot](screenshots/lab3-stdin.png)
+
+<img width="600" height="175" alt="lab3-stdin" src="https://github.com/user-attachments/assets/6b68523f-b814-42e4-b387-5748e2bb0deb" />
+
 
 Result:
 Keyboard input was sent into notes.txt through stdin.
@@ -70,10 +74,10 @@ Keyboard input was sent into notes.txt through stdin.
 ```bash
 ls /etc | grep ssh
 ```
-![Lab 4 Screenshot](screenshots/lab4-pipes.png)
+<img width="600" height="40" alt="lab4-pipes" src="https://github.com/user-attachments/assets/9fb5e7ba-dae8-48fe-b835-1c89a4f665ee" />
 
 Result:
-The stdout of `ls` became the stdin of grep.
+The stdout of `ls` became the stdin of `grep`.
 
 # Security Relevance
 
@@ -85,3 +89,4 @@ Understanding Linux streams is useful for:
 
 # Key Takeaway
 This lab helped reinforce how Linux programs communicate through streams and how shell redirection can be used to control and process output efficiently. 
+These concepts are commonly used when filtering logs, troubleshooting scripts, and processing command-line output during investigations.
