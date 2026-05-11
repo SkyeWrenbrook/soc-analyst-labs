@@ -2,7 +2,7 @@
 
 ## Overview
 
-This project explores how Linux programs use stdin, stdout, stderr, redirection, and pipes and was created as part of my Linux and SOC analyst learning journey.
+This project explores how Linux programs communicate through stdin, stdout, stderr, redirection, and pipes.
 
 ---
 
