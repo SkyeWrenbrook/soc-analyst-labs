@@ -46,9 +46,7 @@ Result:
 ```bash
 ls fakefile > both.txt 2>&1
 ```
-
 <img width="600" height="109" alt="lab2-both-streams" src="https://github.com/user-attachments/assets/b678626d-1a98-41a4-86a8-6f6c23cbdad4" />
-
 
 Result:
 Both stdout and stderr were redirected into the same file.
@@ -60,9 +58,7 @@ Both stdout and stderr were redirected into the same file.
 ```bash
 cat > notes.txt
 ```
-
 <img width="600" height="175" alt="lab3-stdin" src="https://github.com/user-attachments/assets/6b68523f-b814-42e4-b387-5748e2bb0deb" />
-
 
 Result:
 Keyboard input was sent into notes.txt through stdin.
@@ -77,6 +73,7 @@ ls /etc | grep ssh
 <img width="600" height="40" alt="lab4-pipes" src="https://github.com/user-attachments/assets/9fb5e7ba-dae8-48fe-b835-1c89a4f665ee" />
 
 Result:
+
 The stdout of `ls` became the stdin of `grep`.
 
 # Security Relevance
